@@ -1,0 +1,3 @@
+from locators.main_locators import MainLocators
+from locators.cart_locators import CartLocators
+from locators.header_links_locators import HeaderLinksLocators
