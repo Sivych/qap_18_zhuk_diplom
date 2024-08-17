@@ -8,12 +8,11 @@ class BasePage:
 
         self.assertions = Assertions(driver)
 
-#    @allure.step("Open page demowebshop.tricentis.com")
     def open_page(self, url):
         self.driver.get(url)
 
     def click(self, selector):
-        element = self.driver.find_element(selector)
+        element = self.driver.find_element(*selector)
         element.click()
 
     def fill(self, selector, text):
