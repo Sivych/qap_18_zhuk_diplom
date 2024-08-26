@@ -22,6 +22,6 @@ def driver():
     yield driver
 
 #    driver.close()
-    driver.quit()
+#    driver.quit()
     driver.close()
     driver.quit()

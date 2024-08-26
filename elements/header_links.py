@@ -9,3 +9,12 @@ class HeaderLinks(BasePage, HeaderLinksLocators):
 
     def click_on_shopping_cart(self):
         self.click(self.SHOPPING_CART)
+
+    def click_on_register(self):
+        self.click(self.REGISTER)
+
+    def click_on_login(self):
+        self.click(self.LOGIN)
+
+    def click_on_wishlist(self):
+        self.click(self.WISHLIST)

@@ -12,15 +12,16 @@ class MainPage(MainLocators, HeaderLinks, BasePage):
     def __init__(self, driver):
         super().__init__(driver)
 
-    @allure.step("Open page demowebshop.tricentis.com")
+#    @allure.step("Open page demowebshop.tricentis.com")
     def open(self):
         self.driver.get(BASE_URL)
 
-    @allure.step("Assert that main is opened")
+#    @allure.step("Assert that main is opened")
     def assert_that_main_is_opened(self):
         assert self.get_element(self.HEADER_LOGO)
         assert self.get_element(self.HEADER_MENU)
         assert self.get_element(self.SLIDER)
+        assert self.get_element(self.FOOTER_MENU_WRAPPER)
 
         self.save_screenshot('assert_that_main_is_opened.png')
         allure.attach.file(
