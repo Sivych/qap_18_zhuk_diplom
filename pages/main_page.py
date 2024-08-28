@@ -1,13 +1,13 @@
 import allure
 from selenium.webdriver.common.by import By
 
-from elements import HeaderLinks
+from elements import HeaderLinks, HeaderMenu
 from helpers import BASE_URL
 from locators.main_locators import MainLocators
 from pages import BasePage
 
 
-class MainPage(MainLocators, HeaderLinks, BasePage):
+class MainPage(MainLocators, HeaderLinks, HeaderMenu, BasePage):
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -29,4 +29,3 @@ class MainPage(MainLocators, HeaderLinks, BasePage):
             name="assert_that_main_is_opened",
             attachment_type=allure.attachment_type.PNG
         )
-
