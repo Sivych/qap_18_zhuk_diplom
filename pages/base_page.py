@@ -32,3 +32,6 @@ class BasePage:
     def get_text(self, selector):
         element = self.driver.find_element(*selector)
         return element.text
+
+    def go_to_element(self, selector):
+        self.driver.execute_script("arguments[0].scrollIntoView();", *selector)

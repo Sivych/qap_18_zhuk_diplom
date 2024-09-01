@@ -8,13 +8,16 @@ class HeaderLinks(BasePage, HeaderLinksLocators):
         super().__init__(driver)
 
     def click_on_shopping_cart(self):
-        self.click(self.SHOPPING_CART)
+        self.click(self.SHOPPING_CART_MENU_BUTTON)
 
     def click_on_register(self):
-        self.click(self.REGISTER)
+        self.click(self.REGISTER_MENU_BUTTON)
 
     def click_on_login(self):
-        self.click(self.LOGIN)
+        self.click(self.LOGIN_MENU_BUTTON)
 
     def click_on_wishlist(self):
-        self.click(self.WISHLIST)
+        self.click(self.WISHLIST_MENU_BUTTON)
+
+    def click_on_register_button(self):
+        self.click(self.REGISTER_BUTTON)
