@@ -29,3 +29,5 @@ class MainPage(MainLocators, HeaderLinks, HeaderMenu, BasePage):
             name="assert_that_main_is_opened",
             attachment_type=allure.attachment_type.PNG
         )
+
+    
