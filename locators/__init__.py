@@ -6,3 +6,5 @@ from locators.login_link_locators import LoginLinkLocators
 from locators.wishlist_link_locators import WishlistLinkLocators
 from locators.header_menu_locators import HeaderMenuLocators
 from locators.menu_books_locators import MenuBooksLocators
+from locators.menu_computers_locators import MenuComputersLocators
+from locators.menu_electronics_locators import MenuElectronicsLocators
