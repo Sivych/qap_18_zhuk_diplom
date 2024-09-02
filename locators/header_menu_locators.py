@@ -10,4 +10,3 @@ class HeaderMenuLocators:
     MENU_JEWELRY = (By.XPATH, '//a[@href="/jewelry"]')
     MENU_GIFT_CARDS = (By.XPATH, '//a[@href="/gift-cards"]')
 
-

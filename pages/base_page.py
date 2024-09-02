@@ -16,7 +16,7 @@ class BasePage:
         element.click()
 
     def fill(self, selector, text):
-        element = self.driver.find_element(selector)
+        element = self.driver.find_element(*selector)
         element.send_keys(text)
 
     def get_element(self, selector):
@@ -33,5 +33,11 @@ class BasePage:
         element = self.driver.find_element(*selector)
         return element.text
 
-    def go_to_element(self, selector):
-        self.driver.execute_script("arguments[0].scrollIntoView();", *selector)
+    def go_to_element(self, value):
+        self.driver.execute_script("arguments[0].scrollIntoView();", value)
+
+    def get_elements(self, selector):
+        return self.driver.find_elements(*selector)
+
+
+

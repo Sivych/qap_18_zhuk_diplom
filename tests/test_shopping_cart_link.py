@@ -1,9 +1,10 @@
-#@allure.feature("Main feature")
-#@allure.title("Test open shopping cart")
+import allure
 from pages import MainPage
 from pages.shopping_cart_link_page import ShoppingCartLinkPage
 
 
+@allure.feature("Header Links")
+@allure.title("Test open shopping cart")
 def test_open_shopping_cart(driver):
     main_page = MainPage(driver)
 
