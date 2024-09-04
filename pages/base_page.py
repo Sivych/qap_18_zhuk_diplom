@@ -15,12 +15,19 @@ class BasePage:
         element = self.driver.find_element(*selector)
         element.click()
 
+    def clear(self, selector):
+        element = self.driver.find_element(*selector)
+        element.clear()
+
     def fill(self, selector, text):
         element = self.driver.find_element(*selector)
         element.send_keys(text)
 
     def get_element(self, selector):
         return self.driver.find_element(*selector)
+
+    def get_elements(self, selector):
+        return self.driver.find_elements(*selector)
 
     def add_cookie(self, name, value):
         cookie = {'name': name, 'value': value}
@@ -36,8 +43,7 @@ class BasePage:
     def go_to_element(self, value):
         self.driver.execute_script("arguments[0].scrollIntoView();", value)
 
-    def get_elements(self, selector):
-        return self.driver.find_elements(*selector)
+
 
 
 

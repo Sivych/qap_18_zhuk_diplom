@@ -6,3 +6,4 @@ from pages.login_link_page import LoginLinkPage
 from pages.wishlist_link_page import WishlistLinkPage
 from pages.menu_books_page import MenuBooksPage
 from pages.menu_computers_page import MenuComputersPage
+from pages.menu_electronics_page import MenuElectronicsPage

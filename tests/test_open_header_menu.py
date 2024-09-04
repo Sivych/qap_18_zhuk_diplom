@@ -2,6 +2,7 @@ import allure
 from pages import MainPage
 from pages.menu_books_page import MenuBooksPage
 from pages.menu_computers_page import MenuComputersPage
+from pages.menu_electronics_page import MenuElectronicsPage
 
 
 @allure.feature("Header Menu")
@@ -30,10 +31,17 @@ def test_open_menu_computers(driver):
     computers_menu_page.assert_that_menu_computers_is_opened()
 
 
-# @allure.feature("Header Menu")
-# @allure.title("Test open menu electronics")
-# def test_open_menu_electronics(driver):
-#
+@allure.feature("Header Menu")
+@allure.title("Test open menu electronics")
+def test_open_menu_electronics(driver):
+    main_page = MainPage(driver)
+
+    main_page.open()
+    main_page.assert_that_main_is_opened()
+
+    main_page.click_on_menu_electronics()
+    electronics_menu_page = MenuElectronicsPage(driver)
+    electronics_menu_page.assert_that_menu_electronics_is_opened()
 
 
 
