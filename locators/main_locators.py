@@ -7,6 +7,8 @@ class MainLocators:
     SLIDER = (By.CSS_SELECTOR, '[class="nivoSlider"]')
     FOOTER_MENU_WRAPPER = (By.CLASS_NAME, 'footer-menu-wrapper')
     TEXT_PAGE_TITLE = (By.CLASS_NAME, 'page-title')
+    CART_WARNING_TEXT = (By.CSS_SELECTOR, 'p[class="content"]')
+ #   CART_ERROR_TEXT = (By.CSS_SELECTOR,'[class ="close"]')
 
     SEARCH_FIELD = (By.CSS_SELECTOR, 'input[id="small-searchterms"]')
     SEARCH_BUTTON = (By.CSS_SELECTOR, 'input[type="submit"]')
@@ -33,3 +35,4 @@ class MainLocators:
     VIEW_AS_BUTTON = (By.CSS_SELECTOR, 'select[id="products-viewmode"]')
     VIEW_MODE_GRID = (By.CSS_SELECTOR, 'option[value="https://demowebshop.tricentis.com/jewelry?viewmode=grid"]')
     VIEW_MODE_LIST = (By.CSS_SELECTOR, 'option[value="https://demowebshop.tricentis.com/jewelry?viewmode=list"]')
+

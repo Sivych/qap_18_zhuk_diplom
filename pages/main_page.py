@@ -12,7 +12,7 @@ class MainPage(MainLocators, HeaderLinks, HeaderMenu, BasePage):
     def __init__(self, driver):
         super().__init__(driver)
 
-#    @allure.step("Open page demowebshop.tricentis.com")
+    @allure.step("Open page demowebshop.tricentis.com")
     def open(self):
         self.driver.get(BASE_URL)
 
