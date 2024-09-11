@@ -17,11 +17,13 @@ class MenuElectronicsPage(MenuElectronicsLocators, MainLocators, HeaderMenu, Bas
     def open(self):
         self.driver.get(BASE_URL)
 
+    @allure.step("Assert that menu electronics is opened")
     def assert_that_menu_electronics_is_opened(self):
         self.assertions.assert_that_element_containce_text(self.TEXT_PAGE_TITLE, 'Electronics')
         assert self.get_element(self.CAMERA_PHOTO_SECTION)
         assert self.get_element(self.CELL_PHONES_SECTION)
 
+    @allure.step("Check phone cover options")
     def check_phone_cover_options(self):
         self.click(self.CELL_PHONES_SECTION)
         self.click(self.PHONES_PHONE_COVER)
@@ -40,6 +42,7 @@ class MenuElectronicsPage(MenuElectronicsLocators, MainLocators, HeaderMenu, Bas
             available_colors_list.append(color_title)
         assert available_colors_list == ['Black', 'White', 'Blue', 'Yellow']
 
+    @allure.step("Add phone cover to cart")
     def add_phone_cover_to_cart(self):
         self.click(self.CELL_PHONES_SECTION)
         self.click(self.PHONES_PHONE_COVER)
@@ -63,10 +66,11 @@ class MenuElectronicsPage(MenuElectronicsLocators, MainLocators, HeaderMenu, Bas
         positive_values = ['1', '10000', '2', '9999', '32']
         self.fill(self.QUANTITY_FIELD, random.choice(positive_values))
         self.click(self.ADD_TO_CART_BUTTON_PHONE_COVER)
-        time.sleep(5)
-        self.assertions.assert_that_element_containce_text(
-            self.CART_WARNING_TEXT, 'The product has been added to your shopping cart')
+        time.sleep(2)
+        self.assertions.assert_that_element_containce_text(self.CART_WARNING_TEXT,
+                                                           '"The product has been added to your "')
 
+    @allure.step("Add negative qty values")
     def add_negative_qty_values(self):
         self.click(self.CELL_PHONES_SECTION)
         self.click(self.PHONES_SMARTPHONE)
@@ -75,8 +79,10 @@ class MenuElectronicsPage(MenuElectronicsLocators, MainLocators, HeaderMenu, Bas
         negative_values = ['-1', '0', '-10000', 'ten', 'overninethousands']
         self.fill(self.QUANTITY_FIELD, random.choice(negative_values))
         self.click(self.ADD_TO_CART_BUTTON_SMARTPHONE)
-        assert self.get_text(self.CART_WARNING_TEXT)
+        time.sleep(2)
+        self.assertions.assert_that_element_containce_text(self.CART_WARNING_TEXT, 'Quantity should be positive')
 
+    @allure.step("Add over limit qty values")
     def add_over_limit_qty_values(self):
         self.click(self.CELL_PHONES_SECTION)
         self.click(self.PHONES_SMARTPHONE)
@@ -85,4 +91,6 @@ class MenuElectronicsPage(MenuElectronicsLocators, MainLocators, HeaderMenu, Bas
         exceeded_values = ['10001', '20000', '30000']
         self.fill(self.QUANTITY_FIELD, random.choice(exceeded_values))
         self.click(self.ADD_TO_CART_BUTTON_SMARTPHONE)
-        assert self.get_text(self.CART_WARNING_TEXT)
+        time.sleep(2)
+        self.assertions.assert_that_element_containce_text(self.CART_WARNING_TEXT,
+                                                           'The maximum quantity allowed for purchase is 10000.')

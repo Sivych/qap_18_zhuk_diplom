@@ -13,7 +13,7 @@ class LoginLinkPage(LoginLinkLocators, HeaderLinks, MainLocators, BasePage):
     def open(self):
         self.driver.get(BASE_URL)
 
-    #    @allure.step("Assert that page is opened")
+    @allure.step("Assert login page is opened")
     def assert_login_page_is_opened(self):
         self.assertions.assert_that_element_containce_text(self.TEXT_LOGIN, 'Welcome, Please Sign In!')
         assert self.get_element(self.FOOTER_MENU_WRAPPER)

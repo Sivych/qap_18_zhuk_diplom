@@ -15,7 +15,7 @@ class ShoppingCartLinkPage(ShoppingCartLinkLocators, HeaderLinks, MainLocators, 
     def open(self):
         self.driver.get(BASE_URL)
 
-#    @allure.step("Assert that page is opened")
+    @allure.step("Assert shopping_cart page is opened")
     def assert_shopping_cart_page_is_opened(self):
         self.assertions.assert_that_element_containce_text(self.TEXT_SHOPPING_CART, 'Shopping cart')
         assert self.get_element(self.FOOTER_MENU_WRAPPER)

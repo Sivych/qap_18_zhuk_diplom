@@ -15,7 +15,7 @@ class MenuBooksPage(MenuBooksLocators, MainLocators, HeaderMenu, BasePage):
     def open(self):
         self.driver.get(BASE_URL)
 
-    #    @allure.step("Assert that page is opened")
+    @allure.step("Assert that menu books is opened")
     def assert_that_menu_books_is_opened(self):
         self.assertions.assert_that_element_containce_text(self.TEXT_PAGE_TITLE, 'Books')
 #        self.assertions.assert_that_element_containce_text(self.TEXT_SORT_BY, 'Sort by')

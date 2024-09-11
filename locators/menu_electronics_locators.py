@@ -22,4 +22,4 @@ class MenuElectronicsLocators:
     QUANTITY_FIELD = (By.CSS_SELECTOR, 'input[class="qty-input"]')
     ADD_TO_CART_BUTTON_PHONE_COVER = (By.CSS_SELECTOR, 'input[id="add-to-cart-button-80"]')
     ADD_TO_CART_BUTTON_SMARTPHONE = (By.CSS_SELECTOR, 'input[id="add-to-cart-button-43"]')
-    CART_WARNING_TEXT = (By.CSS_SELECTOR, 'p[class="content"]')
+

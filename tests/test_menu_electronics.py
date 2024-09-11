@@ -4,7 +4,7 @@ from pages.menu_electronics_page import MenuElectronicsPage
 
 
 @allure.feature("Header Menu")
-@allure.title("Test check phone cover options")
+@allure.title("Check phone cover options")
 def test_check_phone_cover_options(driver):
     main_page = MainPage(driver)
 
@@ -16,7 +16,7 @@ def test_check_phone_cover_options(driver):
 
 
 @allure.feature("Header Menu")
-@allure.title("Test add phone cover to cart")
+@allure.title("Add phone cover to cart")
 def test_add_phone_cover_to_cart(driver):
     main_page = MainPage(driver)
 
@@ -28,7 +28,7 @@ def test_add_phone_cover_to_cart(driver):
 
 
 @allure.feature("Header Menu")
-@allure.title("Test add negative qty values")
+@allure.title("Add negative qty values")
 def test_add_negative_qty_values(driver):
     main_page = MainPage(driver)
 
@@ -40,7 +40,7 @@ def test_add_negative_qty_values(driver):
 
 
 @allure.feature("Header Menu")
-@allure.title("Test add over limit qty values")
+@allure.title("Add over limit qty values")
 def test_add_over_limit_qty_values(driver):
     main_page = MainPage(driver)
 

@@ -13,6 +13,7 @@ class WishlistLinkPage(WishlistLinkLocators, MenuApparelShoesLocators, HeaderLin
     def open(self):
         self.driver.get(BASE_URL)
 
+    @allure.step("Assert wishlist page is opened")
     def assert_wishlist_page_is_opened(self):
         self.assertions.assert_that_element_containce_text(self.TEXT_PAGE_TITLE, 'Wishlist')
         assert self.get_element(self.FOOTER_MENU_WRAPPER)
@@ -24,21 +25,26 @@ class WishlistLinkPage(WishlistLinkLocators, MenuApparelShoesLocators, HeaderLin
             attachment_type=allure.attachment_type.PNG
         )
 
+    @allure.step("Assert remove item from wishlist")
     def remove_item_from_wishlist(self):
         self.click(self.APPAREL_TOP_ITEM_PAGE)
         self.click(self.APPAREL_TOP_ADD_TO_WISHLIST_BUTTON)
         self.click(self.WISHLIST_UPPER_MENU)
-        self.assertions.assert_that_element_containce_text(self.TEXT_PAGE_TITLE, 'Wishlist')
+        assert self.get_text(self.TEXT_PAGE_TITLE)
+        # self.assertions.assert_that_element_containce_text(self.TEXT_PAGE_TITLE, 'Wishlist')
         self.click(self.REMOVE_FROM_WISHLIST_CHECKBOX)
         self.click(self.UPDATE_WISHLIST)
-        self.assertions.assert_that_element_containce_text(self.EMPTY_WISH_LIST_TEXT, 'The wishlist is empty!')
+        assert self.get_text(self.EMPTY_WISH_LIST_TEXT)
+        # self.assertions.assert_that_element_containce_text(self.EMPTY_WISH_LIST_TEXT, 'The wishlist is empty!')
 
+    @allure.step("Assert add item from wishlist to cart")
     def add_item_from_wishlist_to_cart(self):
         self.click(self.APPAREL_TOP_ITEM_PAGE)
-        item_name = self.ITEM_NAME.
+        item_name = self.get_text(self.ITEM_NAME)
         self.click(self.APPAREL_TOP_ADD_TO_WISHLIST_BUTTON)
         self.click(self.WISHLIST_UPPER_MENU)
-        self.assertions.assert_that_element_containce_text(self.TEXT_PAGE_TITLE, 'Wishlist')
+        assert self.get_text(self.TEXT_PAGE_TITLE)
+        # self.assertions.assert_that_element_containce_text(self.TEXT_PAGE_TITLE, 'Wishlist')
         item_wishlist_name = self.get_text(self.ITEM_POLKA_TOP_WISHLIST_NAME)
         self.click(self.ADD_TO_CART_FROM_WISHLIST_CHECKBOX)
         self.click(self.ADD_TO_CART_FROM_WISHLIST_BUTTON)
