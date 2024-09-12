@@ -1,3 +1,5 @@
+import time
+
 import allure
 import random
 from generator.generator import generated_new_user
@@ -16,7 +18,7 @@ class RegisterLinkPage(RegisterLinkLocators, HeaderLinks, MainLocators, BasePage
     def open(self):
         self.driver.get(BASE_URL)
 
-#    @allure.step("Assert that page is opened")
+    @allure.step("Assert register page is opened")
     def assert_register_page_is_opened(self):
         self.assertions.assert_that_element_containce_text(self.TEXT_PAGE_TITLE, 'Register')
         assert self.get_element(self.FOOTER_MENU_WRAPPER)
@@ -28,6 +30,7 @@ class RegisterLinkPage(RegisterLinkLocators, HeaderLinks, MainLocators, BasePage
             attachment_type=allure.attachment_type.PNG
         )
 
+    @allure.step("Validation message")
     def validation_message(self):
         self.assertions.assert_that_element_containce_text(self.FIRST_NAME_VALIDATION_ERROR, 'First name is required.')
         self.assertions.assert_that_element_containce_text(self.LAST_NAME_VALIDATION_ERROR, 'Last name is required.')
@@ -42,7 +45,8 @@ class RegisterLinkPage(RegisterLinkLocators, HeaderLinks, MainLocators, BasePage
             attachment_type=allure.attachment_type.PNG
         )
 
-    def new_user_input_data(self):
+    @allure.step("Random new user input data")
+    def random_new_user_input_data(self):
         gender_list = self.get_elements(self.GENDER_LIST)
         gender_button = gender_list[random.randint(0, 1)]
         self.go_to_element(gender_button)
@@ -57,6 +61,23 @@ class RegisterLinkPage(RegisterLinkLocators, HeaderLinks, MainLocators, BasePage
         self.fill(self.PASSWORD, '123456')
         self.fill(self.CONFIRM_PASSWORD, '123456')
         self.click_on_register_button()
-        self.assertions.assert_that_element_containce_text(self.COMPLETED_REGISTRATION_TEXT ,
+        time.sleep(2)
+        self.assertions.assert_that_element_containce_text(self.COMPLETED_REGISTRATION_TEXT,
+                                                           'Your registration completed')
+
+    @allure.step("Registration with dataset")
+    def registration_with_dataset(self):
+        gender_list = self.get_elements(self.GENDER_LIST)
+        gender_button = gender_list[0]
+        self.go_to_element(gender_button)
+        gender_button.click()
+        self.fill(self.FIRST_NAME, 'Kristina')
+        self.fill(self.LAST_NAME, 'Zhuk')
+        self.fill(self.EMAIL, 'KZhuk11@mail.com')
+        self.fill(self.PASSWORD, '123456Aabc')
+        self.fill(self.CONFIRM_PASSWORD, '123456Aabc')
+        self.click_on_register_button()
+        time.sleep(2)
+        self.assertions.assert_that_element_containce_text(self.COMPLETED_REGISTRATION_TEXT,
                                                            'Your registration completed')
 
