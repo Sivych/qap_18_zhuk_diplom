@@ -6,7 +6,7 @@ from pages.menu_electronics_page import MenuElectronicsPage
 
 
 @allure.feature("Header Menu")
-@allure.title("Test open menu book")
+@allure.title("Open menu book")
 def test_open_menu_books(driver):
     main_page = MainPage(driver)
 
@@ -19,7 +19,7 @@ def test_open_menu_books(driver):
 
 
 @allure.feature("Header Menu")
-@allure.title("Test open menu computers")
+@allure.title("Open menu computers")
 def test_open_menu_computers(driver):
     main_page = MainPage(driver)
 
@@ -32,7 +32,7 @@ def test_open_menu_computers(driver):
 
 
 @allure.feature("Header Menu")
-@allure.title("Test open menu electronics")
+@allure.title("Open menu electronics")
 def test_open_menu_electronics(driver):
     main_page = MainPage(driver)
 
@@ -42,6 +42,9 @@ def test_open_menu_electronics(driver):
     main_page.click_on_menu_electronics()
     electronics_menu_page = MenuElectronicsPage(driver)
     electronics_menu_page.assert_that_menu_electronics_is_opened()
+
+
+
 
 
 

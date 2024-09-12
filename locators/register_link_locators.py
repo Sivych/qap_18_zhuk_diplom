@@ -2,7 +2,6 @@ from selenium.webdriver.common.by import By
 
 
 class RegisterLinkLocators:
-    REGISTER_BUTTON = (By.CSS_SELECTOR , 'input[id="register-button"]')
     GENDER_LIST = (By.CSS_SELECTOR, 'label[class="forcheckbox"]')
     FIRST_NAME = (By.CSS_SELECTOR, 'input[id="FirstName"]')
     LAST_NAME = (By.CSS_SELECTOR, 'input[id="LastName"]')
