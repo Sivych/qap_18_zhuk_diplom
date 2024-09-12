@@ -28,7 +28,7 @@ class RegisterLinkPage(RegisterLinkLocators, HeaderLinks, MainLocators, BasePage
             attachment_type=allure.attachment_type.PNG
         )
 
-    @allure.step("Assert validation message")
+    @allure.step("Validation message")
     def validation_message(self):
         self.assertions.assert_that_element_containce_text(self.FIRST_NAME_VALIDATION_ERROR, 'First name is required.')
         self.assertions.assert_that_element_containce_text(self.LAST_NAME_VALIDATION_ERROR, 'Last name is required.')
@@ -43,8 +43,8 @@ class RegisterLinkPage(RegisterLinkLocators, HeaderLinks, MainLocators, BasePage
             attachment_type=allure.attachment_type.PNG
         )
 
-    @allure.step("Assert new user input data")
-    def new_user_input_data(self):
+    @allure.step("Random new user input data")
+    def randon_new_user_input_data(self):
         gender_list = self.get_elements(self.GENDER_LIST)
         gender_button = gender_list[random.randint(0, 1)]
         self.go_to_element(gender_button)
@@ -58,6 +58,21 @@ class RegisterLinkPage(RegisterLinkLocators, HeaderLinks, MainLocators, BasePage
         self.fill(self.EMAIL, email)
         self.fill(self.PASSWORD, '123456')
         self.fill(self.CONFIRM_PASSWORD, '123456')
+        self.click_on_register_button()
+        self.assertions.assert_that_element_containce_text(self.COMPLETED_REGISTRATION_TEXT,
+                                                           'Your registration completed')
+
+    @allure.step("Registration with dataset")
+    def registration_with_dataset(self):
+        gender_list = self.get_elements(self.GENDER_LIST)
+        gender_button = gender_list[0]
+        self.go_to_element(gender_button)
+        gender_button.click()
+        self.fill(self.FIRST_NAME, 'Kristina')
+        self.fill(self.LAST_NAME, 'Zhuk')
+        self.fill(self.EMAIL, 'KZhuk11@mail.com')
+        self.fill(self.PASSWORD, '123456Aabc')
+        self.fill(self.CONFIRM_PASSWORD, '123456Aabc')
         self.click_on_register_button()
         self.assertions.assert_that_element_containce_text(self.COMPLETED_REGISTRATION_TEXT,
                                                            'Your registration completed')

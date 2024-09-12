@@ -1,0 +1,58 @@
+Index: pages/register_link_page.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import allure\r\nimport random\r\nfrom generator.generator import generated_new_user\r\n\r\nfrom elements import HeaderLinks\r\nfrom helpers import BASE_URL\r\nfrom locators import RegisterLinkLocators, MainLocators\r\nfrom pages import BasePage\r\n\r\n\r\nclass RegisterLinkPage(RegisterLinkLocators, HeaderLinks, MainLocators, BasePage):\r\n\r\n    def __init__(self, driver):\r\n        super().__init__(driver)\r\n\r\n    def open(self):\r\n        self.driver.get(BASE_URL)\r\n\r\n    @allure.step(\"Assert register page is opened\")\r\n    def assert_register_page_is_opened(self):\r\n        self.assertions.assert_that_element_containce_text(self.TEXT_PAGE_TITLE, 'Register')\r\n        assert self.get_element(self.FOOTER_MENU_WRAPPER)\r\n\r\n        self.save_screenshot('assert_register_page_is_opened.png')\r\n        allure.attach.file(\r\n            \"assert_register_page_is_opened.png\",\r\n            name=\"assert_register_page_is_opened\",\r\n            attachment_type=allure.attachment_type.PNG\r\n        )\r\n\r\n    @allure.step(\"Assert validation message\")\r\n    def validation_message(self):\r\n        self.assertions.assert_that_element_containce_text(self.FIRST_NAME_VALIDATION_ERROR, 'First name is required.')\r\n        self.assertions.assert_that_element_containce_text(self.LAST_NAME_VALIDATION_ERROR, 'Last name is required.')\r\n        self.assertions.assert_that_element_containce_text(self.EMAIL_VALIDATION_ERROR, 'Email is required.')\r\n        self.assertions.assert_that_element_containce_text(self.PASSWORD_VALIDATION_ERROR, 'Password is required.')\r\n        self.assertions.assert_that_element_containce_text(self.CONFIRM_PASSWORD_VALIDATION_ERROR, 'Password is required.')\r\n\r\n        self.save_screenshot('validation_message.png')\r\n        allure.attach.file(\r\n            \"validation_message.png\",\r\n            name=\"validation_message\",\r\n            attachment_type=allure.attachment_type.PNG\r\n        )\r\n\r\n    @allure.step(\"Assert new user input data\")\r\n    def new_user_input_data(self):\r\n        gender_list = self.get_elements(self.GENDER_LIST)\r\n        gender_button = gender_list[random.randint(0, 1)]\r\n        self.go_to_element(gender_button)\r\n        gender_button.click()\r\n        user_info = next(generated_new_user())\r\n        first_name = user_info.first_name\r\n        last_name = user_info.last_name\r\n        email = user_info.email\r\n        self.fill(self.FIRST_NAME, first_name)\r\n        self.fill(self.LAST_NAME, last_name)\r\n        self.fill(self.EMAIL, email)\r\n        self.fill(self.PASSWORD, '123456')\r\n        self.fill(self.CONFIRM_PASSWORD, '123456')\r\n        self.click_on_register_button()\r\n        self.assertions.assert_that_element_containce_text(self.COMPLETED_REGISTRATION_TEXT,\r\n                                                           'Your registration completed')\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pages/register_link_page.py b/pages/register_link_page.py
+--- a/pages/register_link_page.py	
++++ b/pages/register_link_page.py	
+@@ -1,14 +1,16 @@
++import time
++
+ import allure
+ import random
+ from generator.generator import generated_new_user
+ 
+-from elements import HeaderLinks
++from elements import HeaderLinks, Datasets
+ from helpers import BASE_URL
+ from locators import RegisterLinkLocators, MainLocators
+ from pages import BasePage
+ 
+ 
+-class RegisterLinkPage(RegisterLinkLocators, HeaderLinks, MainLocators, BasePage):
++class RegisterLinkPage(RegisterLinkLocators, HeaderLinks, Datasets, MainLocators, BasePage):
+ 
+     def __init__(self, driver):
+         super().__init__(driver)
+@@ -43,8 +45,8 @@
+             attachment_type=allure.attachment_type.PNG
+         )
+ 
+-    @allure.step("Assert new user input data")
+-    def new_user_input_data(self):
++    @allure.step("Random new user input data")
++    def random_new_user_input_data(self):
+         gender_list = self.get_elements(self.GENDER_LIST)
+         gender_button = gender_list[random.randint(0, 1)]
+         self.go_to_element(gender_button)
+@@ -62,3 +64,17 @@
+         self.assertions.assert_that_element_containce_text(self.COMPLETED_REGISTRATION_TEXT,
+                                                            'Your registration completed')
+ 
++    @allure.step("Registration with dataset")
++    def registration_with_dataset(self):
++        gender_list = self.get_elements(self.GENDER_LIST)
++        gender_button = gender_list[0]
++        self.go_to_element(gender_button)
++        gender_button.click()
++        self.fill(self.FIRST_NAME, "Kristina")
++        self.fill(self.LAST_NAME, "Zhuk")
++        self.fill(self.EMAIL, "test111222@mail.com")
++        self.fill(self.PASSWORD, "test123")
++        self.fill(self.CONFIRM_PASSWORD, "test123")
++        self.click_on_register_button()
++        self.assertions.assert_that_element_containce_text(self.COMPLETED_REGISTRATION_TEXT ,
++                                                           'Your registration completed')
