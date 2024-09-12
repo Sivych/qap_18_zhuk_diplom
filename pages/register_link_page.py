@@ -1,3 +1,4 @@
+import time
 import allure
 import random
 from generator.generator import generated_new_user
@@ -65,15 +66,17 @@ class RegisterLinkPage(RegisterLinkLocators, HeaderLinks, MainLocators, BasePage
     @allure.step("Registration with dataset")
     def registration_with_dataset(self):
         gender_list = self.get_elements(self.GENDER_LIST)
-        gender_button = gender_list[0]
+        gender_button = gender_list[1]
         self.go_to_element(gender_button)
         gender_button.click()
         self.fill(self.FIRST_NAME, 'Kristina')
         self.fill(self.LAST_NAME, 'Zhuk')
-        self.fill(self.EMAIL, 'KZhuk11@mail.com')
+        self.fill(self.EMAIL, 'KZhuk111@mail.com')
         self.fill(self.PASSWORD, '123456Aabc')
         self.fill(self.CONFIRM_PASSWORD, '123456Aabc')
+        time.sleep(5)
         self.click_on_register_button()
+        time.sleep(5)
         self.assertions.assert_that_element_containce_text(self.COMPLETED_REGISTRATION_TEXT,
                                                            'Your registration completed')
 

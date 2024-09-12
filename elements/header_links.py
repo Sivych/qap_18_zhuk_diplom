@@ -21,3 +21,6 @@ class HeaderLinks(BasePage, HeaderLinksLocators):
 
     def click_on_register_button(self):
         self.click(self.REGISTER_BUTTON)
+
+    def click_on_login_button(self):
+        self.click(self.LOGIN_BUTTON)
