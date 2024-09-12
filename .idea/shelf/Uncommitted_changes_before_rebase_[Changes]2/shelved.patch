@@ -1,0 +1,19 @@
+Index: locators/main_locators.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from selenium.webdriver.common.by import By\r\n\r\n\r\nclass MainLocators:\r\n    HEADER_LOGO = (By.CSS_SELECTOR, '[alt=\"Tricentis Demo Web Shop\"]')\r\n    HEADER_MENU = (By.CSS_SELECTOR, '[class=\"header-menu\"]')\r\n    SLIDER = (By.CSS_SELECTOR, '[class=\"nivoSlider\"]')\r\n    FOOTER_MENU_WRAPPER = (By.CLASS_NAME, 'footer-menu-wrapper')\r\n    TEXT_PAGE_TITLE = (By.CLASS_NAME, 'page-title')\r\n\r\n    SEARCH_FIELD = (By.CSS_SELECTOR, 'input[id=\"small-searchterms\"]')\r\n    SEARCH_BUTTON = (By.CSS_SELECTOR, 'input[type=\"submit\"]')\r\n    PRODUCTS_TITLES = (By.CSS_SELECTOR, 'h2[class=\"product-title\"]')\r\n    NO_RESULT_TEXT = (By.CSS_SELECTOR, 'strong[class=\"result\"]')\r\n    SORT_BY_BUTTON = (By.CSS_SELECTOR, 'select[id=\"products-orderby\"]')\r\n    SORTING_OPTION_LOW_TO_HIGH = (By.CSS_SELECTOR, 'option[value=\"https://demowebshop.tricentis.com/desktops?orderby'\r\n                                                   '=10\"]')\r\n    ACTUAL_PRICES = (By.CSS_SELECTOR, 'span[class=\"price actual-price\"]')\r\n    SORTING_OPTION_HIGH_TO_LOW = (By.CSS_SELECTOR, 'option[value=\"https://demowebshop.tricentis.com/desktops?orderby'\r\n                                                   '=11\"]')\r\n    SORTING_OPTION_A_TO_Z = (By.CSS_SELECTOR, 'option[value=\"https://demowebshop.tricentis.com/desktops?orderby=5\"]')\r\n    SORTING_OPTION_Z_TO_A = (By.CSS_SELECTOR, 'option[value=\"https://demowebshop.tricentis.com/desktops?orderby=6\"]')\r\n    FILTER_UNDER_1000 = (By.CSS_SELECTOR, 'a[href=\"https://demowebshop.tricentis.com/desktops?price=-1000\"]')\r\n    FILTER_1000_1200 = (By.CSS_SELECTOR, 'a[href=\"https://demowebshop.tricentis.com/desktops?price=1000-1200\"]')\r\n    FILTER_OVER_1200 = (By.CSS_SELECTOR, 'a[href=\"https://demowebshop.tricentis.com/desktops?price=1200-\"]')\r\n    DISPLAY_BUTTON = (By.CSS_SELECTOR, 'select[id=\"products-pagesize\"]')\r\n    DISPLAY_OPTION_4_PER_PAGE = (By.CSS_SELECTOR, 'option[value=\"https://demowebshop.tricentis.com/apparel-shoes'\r\n                                                  '?pagesize=4\"]')\r\n    DISPLAY_OPTION_8_PER_PAGE = (By.CSS_SELECTOR, 'option[value=\"https://demowebshop.tricentis.com/apparel-shoes'\r\n                                                  '?pagesize=8\"]')\r\n    DISPLAY_OPTION_12_PER_PAGE = (By.CSS_SELECTOR, 'option[value=\"https://demowebshop.tricentis.com/apparel-shoes'\r\n                                                   '?pagesize=12\"]')\r\n    VIEW_AS_BUTTON = (By.CSS_SELECTOR, 'select[id=\"products-viewmode\"]')\r\n    VIEW_MODE_GRID = (By.CSS_SELECTOR, 'option[value=\"https://demowebshop.tricentis.com/jewelry?viewmode=grid\"]')\r\n    VIEW_MODE_LIST = (By.CSS_SELECTOR, 'option[value=\"https://demowebshop.tricentis.com/jewelry?viewmode=list\"]')\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/locators/main_locators.py b/locators/main_locators.py
+--- a/locators/main_locators.py	
++++ b/locators/main_locators.py	
+@@ -7,6 +7,8 @@
+     SLIDER = (By.CSS_SELECTOR, '[class="nivoSlider"]')
+     FOOTER_MENU_WRAPPER = (By.CLASS_NAME, 'footer-menu-wrapper')
+     TEXT_PAGE_TITLE = (By.CLASS_NAME, 'page-title')
++    CART_WARNING_TEXT = (By.CSS_SELECTOR, 'p[class="content"]')
++
+ 
+     SEARCH_FIELD = (By.CSS_SELECTOR, 'input[id="small-searchterms"]')
+     SEARCH_BUTTON = (By.CSS_SELECTOR, 'input[type="submit"]')

@@ -36,8 +36,8 @@ def test_registration_without_entering_data(driver):
 
 
 @allure.feature("Header Links")
-@allure.title("Test new user input data")
-def test_new_user_input_data(driver):
+@allure.title("Random new user input data")
+def test_random_new_user_input_data(driver):
     main_page = MainPage(driver)
 
     main_page.open()
@@ -45,6 +45,16 @@ def test_new_user_input_data(driver):
 
     register_link_page = RegisterLinkPage(driver)
     register_link_page.assert_register_page_is_opened()
-    register_link_page.new_user_input_data()
+    register_link_page.randon_new_user_input_data()
 
 
+@allure.feature("Header Links")
+@allure.title("Registration with dataset")
+def test_registration_with_dataset(driver):
+    main_page = MainPage(driver)
+
+    main_page.open()
+    main_page.click_on_register()
+
+    register_link_page = RegisterLinkPage(driver)
+    register_link_page.registration_with_dataset()
