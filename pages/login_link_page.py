@@ -28,12 +28,13 @@ class LoginLinkPage(LoginLinkLocators, RegisterLinkLocators, HeaderLinks, MainLo
         )
 
     @allure.step("User authorization")
-    def user_authorization(self):  # Проверка логина на готовых данных
+    def user_authorization(self):
+        """Проверка логина на готовых данных"""
         self.fill(self.EMAIL, 'KZhuk111@mail.com')
         self.fill(self.PASSWORD, '123456Aabc')
-        time.sleep(5)
+        time.sleep(2)
         self.click_on_login_button()
-        time.sleep(5)
+        time.sleep(2)
         assert self.get_element(self.HEADER_LOGO)
         assert self.get_element(self.HEADER_MENU)
         assert self.get_element(self.SLIDER)

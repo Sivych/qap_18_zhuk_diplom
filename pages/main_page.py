@@ -16,7 +16,7 @@ class MainPage(MainLocators, HeaderLinks, HeaderMenu, BasePage):
     def open(self):
         self.driver.get(BASE_URL)
 
-#    @allure.step("Assert that main is opened")
+    @allure.step("Assert that main is opened")
     def assert_that_main_is_opened(self):
         assert self.get_element(self.HEADER_LOGO)
         assert self.get_element(self.HEADER_MENU)
