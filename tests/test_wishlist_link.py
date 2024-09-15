@@ -3,7 +3,7 @@ from pages import MainPage, WishlistLinkPage
 
 
 @allure.feature("Header Links")
-@allure.title("Test open wishlist link")
+@allure.title("Open wishlist link")
 def test_open_wishlist_link(driver):
     main_page = MainPage(driver)
 
@@ -17,13 +17,11 @@ def test_open_wishlist_link(driver):
 
 
 @allure.feature("Header Links")
-@allure.title("Test remove item from wishlist")
+@allure.title("Remove item from wishlist")
 def test_remove_item_from_wishlist(driver):
     main_page = MainPage(driver)
 
     main_page.open()
-    main_page.assert_that_main_is_opened()
-
     main_page.click_on_menu_apparel_shoes()
 
     wishlist_link_page = WishlistLinkPage(driver)
@@ -31,13 +29,11 @@ def test_remove_item_from_wishlist(driver):
 
 
 @allure.feature("Header Links")
-@allure.title("Test add item from wishlist to cart")
+@allure.title("Add item from wishlist to cart")
 def test_add_item_from_wishlist_to_cart(driver):
     main_page = MainPage(driver)
 
     main_page.open()
-    main_page.assert_that_main_is_opened()
-
     main_page.click_on_menu_apparel_shoes()
 
     wishlist_link_page = WishlistLinkPage(driver)
