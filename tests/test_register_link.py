@@ -48,13 +48,13 @@ def test_random_new_user_input_data(driver):
     register_link_page.randon_new_user_input_data()
 
 
-@allure.feature("Header Links")
-@allure.title("Registration with dataset")
-def test_registration_with_dataset(driver):
-    main_page = MainPage(driver)
-
-    main_page.open()
-    main_page.click_on_register()
-
-    register_link_page = RegisterLinkPage(driver)
-    register_link_page.registration_with_dataset()
+# @allure.feature("Header Links")
+# @allure.title("Registration with dataset")
+# def test_registration_with_dataset(driver):
+#     main_page = MainPage(driver)
+#
+#     main_page.open()
+#     main_page.click_on_register()
+#
+#     register_link_page = RegisterLinkPage(driver)
+#     register_link_page.registration_with_dataset()

@@ -2,8 +2,6 @@ import allure
 
 from pages import MainPage
 from pages.login_link_page import LoginLinkPage
-from pages.register_link_page import RegisterLinkPage
-
 
 
 @allure.feature("Header Links")
@@ -26,13 +24,21 @@ def test_user_authorization(driver):
     main_page = MainPage(driver)
 
     main_page.open()
-
-    # main_page.click_on_register()
-
-    # register_link_page = RegisterLinkPage(driver)
-    # register_link_page.registration_with_dataset()
-
     main_page.click_on_login()
 
     login_link_page = LoginLinkPage(driver)
     login_link_page.user_authorization()
+
+
+@allure.feature("Header Links")
+@allure.title("Error user authorization")
+def test_error_user_authorization(driver):
+    main_page = MainPage(driver)
+
+    main_page.open()
+    main_page.click_on_login()
+
+    login_link_page = LoginLinkPage(driver)
+    login_link_page.error_user_authorization()
+
+
