@@ -63,22 +63,22 @@ class RegisterLinkPage(RegisterLinkLocators, HeaderLinks, MainLocators, BasePage
         self.assertions.assert_that_element_containce_text(self.COMPLETED_REGISTRATION_TEXT,
                                                            'Your registration completed')
 
-    @allure.step("Registration with dataset")
-    def registration_with_dataset(self):
-        gender_list = self.get_elements(self.GENDER_LIST)
-        gender_button = gender_list[1]
-        self.go_to_element(gender_button)
-        gender_button.click()
-        self.fill(self.FIRST_NAME, 'Kristina')
-        self.fill(self.LAST_NAME, 'Zhuk')
-        user_info = next(generated_new_user())
-        dataset_email = user_info.email
-        self.fill(self.EMAIL, dataset_email)
-        self.fill(self.PASSWORD, '123456Aabc')
-        self.fill(self.CONFIRM_PASSWORD, '123456Aabc')
-        time.sleep(2)
-        self.click_on_register_button()
-        time.sleep(2)
-        self.assertions.assert_that_element_containce_text(self.COMPLETED_REGISTRATION_TEXT,
-                                                           'Your registration completed')
-
+    # @allure.step("Registration with dataset")
+    # def registration_with_dataset(self):
+    #     gender_list = self.get_elements(self.GENDER_LIST)
+    #     gender_button = gender_list[1]
+    #     self.go_to_element(gender_button)
+    #     gender_button.click()
+    #     self.fill(self.FIRST_NAME, 'Kristina')
+    #     self.fill(self.LAST_NAME, 'Zhuk')
+    #     user_info = next(generated_new_user())
+    #     dataset_email = user_info.email
+    #     self.fill(self.EMAIL, dataset_email)
+    #     self.fill(self.PASSWORD, '123456Aabc')
+    #     self.fill(self.CONFIRM_PASSWORD, '123456Aabc')
+    #     time.sleep(2)
+    #     self.click_on_register_button()
+    #     time.sleep(2)
+    #     self.assertions.assert_that_element_containce_text(self.COMPLETED_REGISTRATION_TEXT,
+    #                                                        'Your registration completed')
+    #

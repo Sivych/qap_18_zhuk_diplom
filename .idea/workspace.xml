@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d52008e-f26b-44ce-b4dc-cf3e839a0682" name="Changes" comment="add_new_test_login_link">
+    <list default="true" id="6d52008e-f26b-44ce-b4dc-cf3e839a0682" name="Changes" comment="bug_fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/login_link_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/login_link_locators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/login_link_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_link_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/register_link_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register_link_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/wishlist_link_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/wishlist_link_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_wishlist_link.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_wishlist_link.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_login_link.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login_link.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_register_link.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_register_link.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="add_login_page" />
+        <entry key="$PROJECT_DIR$" value="bug_fixes" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,35 +40,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_login_link.test_open_login_link.executor": "Run",
-    "Python tests.Python tests for test_login_link.test_user_authorization.executor": "Run",
-    "Python tests.Python tests for test_main.test_open_shopping_cart.executor": "Run",
-    "Python tests.Python tests for test_main.test_that_main_is_opened.executor": "Run",
-    "Python tests.Python tests for test_menu_electronics.test_add_negative_qty_values.executor": "Run",
-    "Python tests.Python tests for test_menu_electronics.test_add_over_limit_qty_values.executor": "Run",
-    "Python tests.Python tests for test_menu_electronics.test_add_phone_cover_to_cart.executor": "Run",
-    "Python tests.Python tests for test_menu_electronics.test_check_phone_cover_options.executor": "Run",
-    "Python tests.Python tests for test_open_header_menu.test_open_menu_books.executor": "Run",
-    "Python tests.Python tests for test_open_header_menu.test_open_menu_electronics.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_new_user_input_data.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_open_register_link.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_open_shopping_cart.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_random_new_user_input_data.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_registration_with_dataset.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_registration_without_entering_data.executor": "Run",
-    "Python tests.Python tests for test_shopping_cart_link.test_open_shopping_cart.executor": "Run",
-    "Python tests.Python tests for test_wishlist_link.test_add_item_from_wishlist_to_cart.executor": "Run",
-    "Python tests.Python tests for test_wishlist_link.test_open_wishlist_link.executor": "Run",
-    "Python tests.Python tests for test_wishlist_link.test_remove_item_from_wishlist.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "bug__fixes",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/abeli/PycharmProjects/qap18_Zhuk",
-    "settings.editor.selected.configurable": "preferences.general"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_login_link.test_error_user_authorization.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login_link.test_open_login_link.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login_link.test_user_authorization.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main.test_open_shopping_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main.test_that_main_is_opened.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_menu_electronics.test_add_negative_qty_values.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_menu_electronics.test_add_over_limit_qty_values.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_menu_electronics.test_add_phone_cover_to_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_menu_electronics.test_check_phone_cover_options.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_open_header_menu.test_open_menu_books.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_open_header_menu.test_open_menu_electronics.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_new_user_input_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_open_register_link.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_open_shopping_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_random_new_user_input_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_registration_with_dataset.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_registration_without_entering_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_shopping_cart_link.test_open_shopping_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_wishlist_link.test_add_item_from_wishlist_to_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_wishlist_link.test_open_wishlist_link.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_wishlist_link.test_remove_item_from_wishlist.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_login_link.py.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;new__login__link__test&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/abeli/PycharmProjects/qap18_Zhuk&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\abeli\diplom\qap_18_zhuk_diplom\tests" />
@@ -78,7 +80,22 @@
       <recent name="C:\Users\abeli\diplom\qap_18_zhuk_diplom" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_menu_electronics.test_add_phone_cover_to_cart">
+  <component name="RunManager" selected="Python tests.Python tests for test_login_link.test_error_user_authorization">
+    <configuration name="Python tests for test_login_link.test_error_user_authorization" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="qap_18_zhuk_diplom" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_login_link.test_error_user_authorization&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_login_link.test_user_authorization" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="qap_18_zhuk_diplom" />
       <option name="ENV_FILES" value="" />
@@ -124,7 +141,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_wishlist_link.test_add_item_from_wishlist_to_cart" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_login_link.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="qap_18_zhuk_diplom" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,32 +152,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_wishlist_link.test_add_item_from_wishlist_to_cart&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_wishlist_link.test_remove_item_from_wishlist" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="qap_18_zhuk_diplom" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_wishlist_link.test_remove_item_from_wishlist&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_login_link.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_login_link.test_error_user_authorization" />
+        <item itemvalue="Python tests.Python tests in test_login_link.py" />
+        <item itemvalue="Python tests.Python tests for test_login_link.test_user_authorization" />
         <item itemvalue="Python tests.Python tests for test_menu_electronics.test_add_phone_cover_to_cart" />
         <item itemvalue="Python tests.Python tests for test_register_link.test_registration_with_dataset" />
-        <item itemvalue="Python tests.Python tests for test_wishlist_link.test_remove_item_from_wishlist" />
-        <item itemvalue="Python tests.Python tests for test_wishlist_link.test_add_item_from_wishlist_to_cart" />
-        <item itemvalue="Python tests.Python tests for test_login_link.test_user_authorization" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726167497984</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="bug_fixes">
+      <option name="closed" value="true" />
+      <created>1726410212768</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1726410212768</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -292,6 +302,7 @@
     <MESSAGE value="bug_fixes_test_menu_electronics" />
     <MESSAGE value="add_new_test_registration_with_dataset" />
     <MESSAGE value="add_new_test_login_link" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_new_test_login_link" />
+    <MESSAGE value="bug_fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug_fixes" />
   </component>
 </project>
