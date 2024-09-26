@@ -17,3 +17,8 @@ class MenuComputersLocators:
    SIMPLE_COMPUTER = (By.XPATH, '//img[@alt="Picture of Simple Computer"]')
 
    NOTEBOOK_LAPTOP = (By.XPATH, '//img[@alt="Picture of 14.1-inch Laptop"]')
+
+   TCP_COACHING_DAY_ADD_TO_CART = (By.XPATH, '/html/body/div[4]/div[1]/div[4]/div[2]'
+                                             '/div[2]/div[2]/div[3]/div[1]/div/div[2]/div[3]/div[2]/input')
+   TCP_INSTRUCTOR_LED_TRAINING = (By.XPATH, '/html/body/div[4]/div[1]/div[4]/div[2]/div[2]'
+                                             '/div[2]/div[3]/div[2]/div/div[2]/div[3]/div[2]/input')

@@ -21,8 +21,10 @@ class MenuBooksPage(MenuBooksLocators, MainLocators, HeaderMenu, BasePage):
 #        self.assertions.assert_that_element_containce_text(self.TEXT_SORT_BY, 'Sort by')
         assert self.get_element(self.FOOTER_MENU_WRAPPER)
 
-
-    # def assert_add_books_to_the_shopping_cart(self):
+    @allure.step("Add books to the shopping cart via the showcase")
+    def add_books_to_the_shopping_cart(self):
+        self.click(self.BOOK_COMPUTING_AND_INTERNET_ADD_TO_CART)
+        self.click(self.BOOK_FICTION_ADD_TO_CART)
 
 
 

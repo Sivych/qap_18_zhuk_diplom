@@ -11,6 +11,7 @@ class MenuElectronicsLocators:
     CAMERA_HIGH_DEFINITION_CAMCORDER = (By.XPATH, '//img[@alt="Picture of High Definition 3D Camcorder"]')
 
     PHONES_SMARTPHONE = (By.XPATH, '//img[@alt="Picture of Smartphone"]')
+    PHONES_SMARTPHONE_CART_NAME = (By.CSS_SELECTOR, '[href="/phone-cover"]')
     PHONES_USED_PHONE = (By.XPATH, '//img[@alt="Picture of Used phone"]')
     PHONES_PHONE_COVER = (By.XPATH, '//img[@alt="Picture of Phone Cover"]')
 

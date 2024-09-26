@@ -18,3 +18,8 @@ class MenuComputersPage(MenuComputersLocators, MainLocators, HeaderMenu, BasePag
     def assert_that_menu_computers_is_opened(self):
         self.assertions.assert_that_element_containce_text(self.TEXT_PAGE_TITLE, 'Computers')
         assert self.get_element(self.PAGE_BODY)
+
+    @allure.step("Add computers accessories to the shopping cart via the showcase")
+    def add_accessories_to_the_shopping_cart(self):
+        self.click(self.TCP_COACHING_DAY_ADD_TO_CART)
+        self.click(self.TCP_INSTRUCTOR_LED_TRAINING)
