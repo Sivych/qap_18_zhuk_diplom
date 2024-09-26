@@ -10,3 +10,5 @@ class MenuApparelShoesLocators:
                                     '/html/body/div[4]/div[1]/div[4]/div/div/div[2]/div[1]/form/table/tbody/tr/td[4]/a')
     ITEM_POLKA_TOP_CART_NAME = (By.XPATH,
                                 '/html/body/div[4]/div[1]/div[4]/div/div/div[2]/div/form/table/tbody/tr/td[3]/a')
+
+

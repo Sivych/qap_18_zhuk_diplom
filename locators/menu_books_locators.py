@@ -13,3 +13,10 @@ class MenuBooksLocators:
     BOOK_FICTION_EX = (By.XPATH, '[//img[@alt="Picture of Fiction EX"]')
     BOOK_HEALTH = (By.XPATH, '[//img[@alt="Picture of Health Book"]')
     BOOK_SCIENCE = (By.XPATH, '[//img[@alt="Picture of Science"]')
+
+    BOOK_COMPUTING_AND_INTERNET_ADD_TO_CART = (By.XPATH,
+                                               '/html/body/div[4]/div[1]/div[4]/div[2]/'
+                                               'div[2]/div[2]/div[3]/div[1]/div/div[2]/div[3]/div[2]/input')
+    BOOK_FICTION_ADD_TO_CART = (By.XPATH,
+                                '/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]'
+                                '/div[3]/div[3]/div/div[2]/div[3]/div[2]/input')

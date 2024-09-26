@@ -33,8 +33,8 @@ class LoginLinkPage(LoginLinkLocators , RegisterLinkLocators , HeaderLinks , Mai
         """Проверка логина на готовых данных"""
         dataset_email = 'KZhuk111@mail.com'
         dataset_password = '123456Aabc'
-        self.fill(self.EMAIL , dataset_email)
-        self.fill(self.PASSWORD , dataset_password)
+        self.fill(self.EMAIL, dataset_email)
+        self.fill(self.PASSWORD, dataset_password)
         self.click_on_login_button()
         time.sleep(2)
         assert self.get_element(self.HEADER_LOGO)
@@ -44,8 +44,8 @@ class LoginLinkPage(LoginLinkLocators , RegisterLinkLocators , HeaderLinks , Mai
 
         self.save_screenshot('successful_login.png')
         allure.attach.file(
-            "successful_login.png" ,
-            name="successful_login" ,
+            "successful_login.png",
+            name="successful_login",
             attachment_type=allure.attachment_type.PNG
         )
 

@@ -16,6 +16,7 @@ class WishlistLinkPage(WishlistLinkLocators, MenuApparelShoesLocators, HeaderLin
 
     @allure.step("Assert wishlist page is opened")
     def assert_wishlist_page_is_opened(self):
+        """Избранное открыто"""
         self.assertions.assert_that_element_containce_text(self.TEXT_PAGE_TITLE, 'Wishlist')
         assert self.get_element(self.FOOTER_MENU_WRAPPER)
 

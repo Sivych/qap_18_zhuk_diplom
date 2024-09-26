@@ -31,6 +31,7 @@ class RegisterLinkPage(RegisterLinkLocators, HeaderLinks, MainLocators, BasePage
 
     @allure.step("Validation message")
     def validation_message(self):
+        """Регистрация с вводом пустых значений"""
         self.assertions.assert_that_element_containce_text(self.FIRST_NAME_VALIDATION_ERROR, 'First name is required.')
         self.assertions.assert_that_element_containce_text(self.LAST_NAME_VALIDATION_ERROR, 'Last name is required.')
         self.assertions.assert_that_element_containce_text(self.EMAIL_VALIDATION_ERROR, 'Email is required.')
@@ -46,6 +47,7 @@ class RegisterLinkPage(RegisterLinkLocators, HeaderLinks, MainLocators, BasePage
 
     @allure.step("Random new user input data")
     def randon_new_user_input_data(self):
+        """Регистрация нового пользователя"""
         gender_list = self.get_elements(self.GENDER_LIST)
         gender_button = gender_list[random.randint(0, 1)]
         self.go_to_element(gender_button)
@@ -63,22 +65,3 @@ class RegisterLinkPage(RegisterLinkLocators, HeaderLinks, MainLocators, BasePage
         self.assertions.assert_that_element_containce_text(self.COMPLETED_REGISTRATION_TEXT,
                                                            'Your registration completed')
 
-    # @allure.step("Registration with dataset")
-    # def registration_with_dataset(self):
-    #     gender_list = self.get_elements(self.GENDER_LIST)
-    #     gender_button = gender_list[1]
-    #     self.go_to_element(gender_button)
-    #     gender_button.click()
-    #     self.fill(self.FIRST_NAME, 'Kristina')
-    #     self.fill(self.LAST_NAME, 'Zhuk')
-    #     user_info = next(generated_new_user())
-    #     dataset_email = user_info.email
-    #     self.fill(self.EMAIL, dataset_email)
-    #     self.fill(self.PASSWORD, '123456Aabc')
-    #     self.fill(self.CONFIRM_PASSWORD, '123456Aabc')
-    #     time.sleep(2)
-    #     self.click_on_register_button()
-    #     time.sleep(2)
-    #     self.assertions.assert_that_element_containce_text(self.COMPLETED_REGISTRATION_TEXT,
-    #                                                        'Your registration completed')
-    #

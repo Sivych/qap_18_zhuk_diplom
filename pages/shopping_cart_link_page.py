@@ -27,3 +27,10 @@ class ShoppingCartLinkPage(ShoppingCartLinkLocators, HeaderLinks, MainLocators, 
             name="assert_shopping_cart_page_is_opened",
             attachment_type=allure.attachment_type.PNG
         )
+
+    def checking_the_order_processing_without_authorization(self):
+        """Проверка работы оформления заказа без авторизации"""
+    
+
+    # def update_shopping_cart(self):
+    # """Проверка обновления корзины"""

@@ -3,14 +3,14 @@ import time
 import allure
 
 import random
-from elements import HeaderMenu
+from elements import HeaderMenu, HeaderLinks
 from helpers import BASE_URL
 from locators import MainLocators, MenuElectronicsLocators
 from pages import BasePage
 from selenium.webdriver.support.ui import Select
 
 
-class MenuElectronicsPage(MenuElectronicsLocators, MainLocators, HeaderMenu, BasePage):
+class MenuElectronicsPage(MenuElectronicsLocators, HeaderLinks, MainLocators, HeaderMenu, BasePage):
     def init(self, driver):
         super().__init__(driver)
 
@@ -19,12 +19,14 @@ class MenuElectronicsPage(MenuElectronicsLocators, MainLocators, HeaderMenu, Bas
 
     @allure.step("Assert that menu electronics is opened")
     def assert_that_menu_electronics_is_opened(self):
+        """Меню "электроника" открыто"""
         self.assertions.assert_that_element_containce_text(self.TEXT_PAGE_TITLE, 'Electronics')
         assert self.get_element(self.CAMERA_PHOTO_SECTION)
         assert self.get_element(self.CELL_PHONES_SECTION)
 
     @allure.step("Check phone cover options")
     def check_phone_cover_options(self):
+        """Проверка работы параметров телефона Phone Cover"""
         self.click(self.CELL_PHONES_SECTION)
         self.click(self.PHONES_PHONE_COVER)
         self.click(self.MANUFACTURER_DROPDOWN_MENU)
@@ -44,6 +46,7 @@ class MenuElectronicsPage(MenuElectronicsLocators, MainLocators, HeaderMenu, Bas
 
     @allure.step("Add phone cover to cart")
     def add_phone_cover_to_cart(self):
+        """Проверка добавления телефона Phone Cover в корзину с вводом позитивного количества"""
         self.click(self.CELL_PHONES_SECTION)
         self.click(self.PHONES_PHONE_COVER)
         self.click(self.MANUFACTURER_DROPDOWN_MENU)
@@ -67,11 +70,13 @@ class MenuElectronicsPage(MenuElectronicsLocators, MainLocators, HeaderMenu, Bas
         self.fill(self.QUANTITY_FIELD, random.choice(positive_values))
         self.click(self.ADD_TO_CART_BUTTON_PHONE_COVER)
         time.sleep(2)
-        self.assertions.assert_that_element_containce_text(self.CART_WARNING_TEXT,
-                                                           '"The product has been added to your "')
+        self.click(self.SHOPPING_CART_MENU_BUTTON)
+        self.assertions.assert_that_element_containce_text(self.TEXT_PAGE_TITLE, 'Shopping cart')
+        assert self.get_element(self.PHONES_SMARTPHONE_CART_NAME)
 
     @allure.step("Add negative qty values")
-    def add_negative_qty_values(self):
+    def add_negative_qty_values_smartphone(self):
+        """Проверка добавления телефона Smartphone в корзину с вводом негативного количества"""
         self.click(self.CELL_PHONES_SECTION)
         self.click(self.PHONES_SMARTPHONE)
         self.click(self.QUANTITY_FIELD)
@@ -80,10 +85,12 @@ class MenuElectronicsPage(MenuElectronicsLocators, MainLocators, HeaderMenu, Bas
         self.fill(self.QUANTITY_FIELD, random.choice(negative_values))
         self.click(self.ADD_TO_CART_BUTTON_SMARTPHONE)
         time.sleep(2)
-        self.assertions.assert_that_element_containce_text(self.CART_WARNING_TEXT, 'Quantity should be positive')
+        self.assertions.assert_that_element_containce_text(self.CART_WARNING_TEXT,
+                                                           'Quantity should be positive')
 
     @allure.step("Add over limit qty values")
-    def add_over_limit_qty_values(self):
+    def add_over_limit_qty_values_smartphone(self):
+        """Проверка добавления телефона Smartphone в корзину с вводом более максимально допустимого количества"""
         self.click(self.CELL_PHONES_SECTION)
         self.click(self.PHONES_SMARTPHONE)
         self.click(self.QUANTITY_FIELD)
