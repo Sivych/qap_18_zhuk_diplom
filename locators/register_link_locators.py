@@ -9,6 +9,8 @@ class RegisterLinkLocators:
     PASSWORD = (By.CSS_SELECTOR, 'input[id="Password"]')
     CONFIRM_PASSWORD = (By.CSS_SELECTOR, 'input[id="ConfirmPassword"]')
     COMPLETED_REGISTRATION_TEXT = (By.CSS_SELECTOR, 'div[class="result"]')
+    FIELD_VALIDATION_ERROR_EMAIL = (By.XPATH, '/html/body/div[4]/div[1]/div[4]/div[2]'
+                                              '/form/div/div[2]/div[2]/div[2]/div[4]/span[2]')
 
     FIRST_NAME_OUTPUT = (By.CSS_SELECTOR, 'input#FirstName.text-box.single-line.valid')
     LAST_NAME_OUTPUT = (By.CSS_SELECTOR, 'input#LastName.text-box.single-line.valid')
