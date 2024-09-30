@@ -8,3 +8,4 @@ requests==2.32.3
 selenium==4.22.0
 webdriver-manager==4.0.1
 Faker==17.3.0
+allure-pytest==2.13.5
