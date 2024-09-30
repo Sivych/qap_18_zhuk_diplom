@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d52008e-f26b-44ce-b4dc-cf3e839a0682" name="Changes" comment="editing_conftest.py">
+    <list default="true" id="6d52008e-f26b-44ce-b4dc-cf3e839a0682" name="Changes" comment="add_new_register_link_tests_email">
       <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_09_2024_22_09_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_09_2024_22_09__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_09_2024_19_36_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_09_2024_19_36__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_09_2024_20_22_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_09_2024_20_22__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]3/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators/register_link_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/register_link_locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/register_link_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register_link_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_register_link.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_register_link.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="editing_conftest" />
+        <entry key="$PROJECT_DIR$" value="add_login_tests" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -98,7 +83,7 @@
     "Python tests.Python tests for test_wishlist_link.test_remove_item_from_wishlist.executor": "Run",
     "Python tests.Python tests in test_login_link.py.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "add__login__tests",
+    "git-widget-placeholder": "editing__readmefile",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/abeli/diplom/qap_18_zhuk_diplom/Makefile",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.make"
@@ -335,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727526737162</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add_new_register_link_tests_email">
+      <option name="closed" value="true" />
+      <created>1727715722981</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1727715722981</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -363,6 +356,7 @@
     <MESSAGE value="add_test_error_user_authorization" />
     <MESSAGE value="editing_page" />
     <MESSAGE value="editing_conftest.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="editing_conftest.py" />
+    <MESSAGE value="add_new_register_link_tests_email" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_new_register_link_tests_email" />
   </component>
 </project>
