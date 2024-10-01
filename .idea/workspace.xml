@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d52008e-f26b-44ce-b4dc-cf3e839a0682" name="Changes" comment="add_new_register_link_tests_email">
+    <list default="true" id="6d52008e-f26b-44ce-b4dc-cf3e839a0682" name="Changes" comment="adit_readme_file">
       <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
@@ -40,55 +40,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Makefile Target.Makefile.executor": "Run",
-    "Makefile Target.test-all.executor": "Run",
-    "Makefile Target.test-main-firefox.executor": "Run",
-    "Makefile Target.test-main.executor": "Run",
-    "Makefile Target.test.executor": "Run",
-    "Makefile Target.test_head.executor": "Run",
-    "Python tests.Python tests for test_login_link.test_error_user_authorization.executor": "Run",
-    "Python tests.Python tests for test_login_link.test_open_login_link.executor": "Run",
-    "Python tests.Python tests for test_login_link.test_user_authorization.executor": "Run",
-    "Python tests.Python tests for test_main.test_open_shopping_cart.executor": "Run",
-    "Python tests.Python tests for test_main.test_that_main_is_opened.executor": "Run",
-    "Python tests.Python tests for test_menu_electronics.test_add_negative_qty_values.executor": "Run",
-    "Python tests.Python tests for test_menu_electronics.test_add_negative_qty_values_smartphone.executor": "Run",
-    "Python tests.Python tests for test_menu_electronics.test_add_over_limit_qty_values.executor": "Run",
-    "Python tests.Python tests for test_menu_electronics.test_add_over_limit_qty_values_smartphone.executor": "Run",
-    "Python tests.Python tests for test_menu_electronics.test_add_phone_cover_to_cart.executor": "Run",
-    "Python tests.Python tests for test_menu_electronics.test_check_phone_cover_options.executor": "Run",
-    "Python tests.Python tests for test_open_header_menu.test_open_menu_books.executor": "Run",
-    "Python tests.Python tests for test_open_header_menu.test_open_menu_electronics.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_email_in_lowercase.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_email_in_uppercase.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_email_with_hyphen.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_email_with_hyphen_in_domain.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_email_with_numbers.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_email_with_numbers_in_domain.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_email_with_spaces.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_email_without_an_account.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_email_without_domain.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_empty_email_field.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_new_user_input_data.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_open_register_link.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_open_shopping_cart.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_random_new_user_input_data.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_registration_with_dataset.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_registration_without_entering_data.executor": "Run",
-    "Python tests.Python tests for test_shopping_cart_link.test_open_shopping_cart.executor": "Run",
-    "Python tests.Python tests for test_wishlist_link.test_add_item_from_wishlist_to_cart.executor": "Run",
-    "Python tests.Python tests for test_wishlist_link.test_open_wishlist_link.executor": "Run",
-    "Python tests.Python tests for test_wishlist_link.test_remove_item_from_wishlist.executor": "Run",
-    "Python tests.Python tests in test_login_link.py.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "editing__readmefile",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/abeli/diplom/qap_18_zhuk_diplom/Makefile",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.make"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Makefile Target.Makefile.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test-all.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test-main-firefox.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test-main.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test_head.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login_link.test_error_user_authorization.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login_link.test_open_login_link.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login_link.test_user_authorization.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main.test_open_shopping_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main.test_that_main_is_opened.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_menu_electronics.test_add_negative_qty_values.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_menu_electronics.test_add_negative_qty_values_smartphone.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_menu_electronics.test_add_over_limit_qty_values.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_menu_electronics.test_add_over_limit_qty_values_smartphone.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_menu_electronics.test_add_phone_cover_to_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_menu_electronics.test_check_phone_cover_options.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_open_header_menu.test_open_menu_books.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_open_header_menu.test_open_menu_electronics.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_email_in_lowercase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_email_in_uppercase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_email_with_hyphen.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_email_with_hyphen_in_domain.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_email_with_numbers.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_email_with_numbers_in_domain.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_email_with_spaces.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_email_without_an_account.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_email_without_domain.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_empty_email_field.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_new_user_input_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_open_register_link.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_open_shopping_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_random_new_user_input_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_registration_with_dataset.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_registration_without_entering_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_shopping_cart_link.test_open_shopping_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_wishlist_link.test_add_item_from_wishlist_to_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_wishlist_link.test_open_wishlist_link.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_wishlist_link.test_remove_item_from_wishlist.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_login_link.py.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;editing__readmefile&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Fotakartka/QAP18/образец/Alza_diplom-master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.make&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\abeli\diplom\qap_18_zhuk_diplom\tests" />
@@ -328,7 +328,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727715722981</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="adit_readme_file">
+      <option name="closed" value="true" />
+      <created>1727718550874</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1727718550874</updated>
+    </task>
+    <task id="LOCAL-00018" summary="adit_readme_file">
+      <option name="closed" value="true" />
+      <created>1727718611844</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1727718611844</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -357,6 +373,7 @@
     <MESSAGE value="editing_page" />
     <MESSAGE value="editing_conftest.py" />
     <MESSAGE value="add_new_register_link_tests_email" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_new_register_link_tests_email" />
+    <MESSAGE value="adit_readme_file" />
+    <option name="LAST_COMMIT_MESSAGE" value="adit_readme_file" />
   </component>
 </project>
