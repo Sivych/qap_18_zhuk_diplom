@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d52008e-f26b-44ce-b4dc-cf3e839a0682" name="Changes" comment="adit_readme_file">
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/login_link_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/login_link_locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login_link_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_link_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_login_link.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login_link.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="add_login_tests" />
+        <entry key="$PROJECT_DIR$" value="editing_readmefile" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,55 +41,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Makefile Target.Makefile.executor&quot;: &quot;Run&quot;,
-    &quot;Makefile Target.test-all.executor&quot;: &quot;Run&quot;,
-    &quot;Makefile Target.test-main-firefox.executor&quot;: &quot;Run&quot;,
-    &quot;Makefile Target.test-main.executor&quot;: &quot;Run&quot;,
-    &quot;Makefile Target.test.executor&quot;: &quot;Run&quot;,
-    &quot;Makefile Target.test_head.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_login_link.test_error_user_authorization.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_login_link.test_open_login_link.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_login_link.test_user_authorization.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_main.test_open_shopping_cart.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_main.test_that_main_is_opened.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_menu_electronics.test_add_negative_qty_values.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_menu_electronics.test_add_negative_qty_values_smartphone.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_menu_electronics.test_add_over_limit_qty_values.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_menu_electronics.test_add_over_limit_qty_values_smartphone.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_menu_electronics.test_add_phone_cover_to_cart.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_menu_electronics.test_check_phone_cover_options.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_open_header_menu.test_open_menu_books.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_open_header_menu.test_open_menu_electronics.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_register_link.test_email_in_lowercase.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_register_link.test_email_in_uppercase.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_register_link.test_email_with_hyphen.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_register_link.test_email_with_hyphen_in_domain.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_register_link.test_email_with_numbers.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_register_link.test_email_with_numbers_in_domain.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_register_link.test_email_with_spaces.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_register_link.test_email_without_an_account.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_register_link.test_email_without_domain.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_register_link.test_empty_email_field.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_register_link.test_new_user_input_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_register_link.test_open_register_link.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_register_link.test_open_shopping_cart.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_register_link.test_random_new_user_input_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_register_link.test_registration_with_dataset.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_register_link.test_registration_without_entering_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_shopping_cart_link.test_open_shopping_cart.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_wishlist_link.test_add_item_from_wishlist_to_cart.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_wishlist_link.test_open_wishlist_link.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_wishlist_link.test_remove_item_from_wishlist.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_login_link.py.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;editing__readmefile&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Fotakartka/QAP18/образец/Alza_diplom-master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.make&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Makefile Target.Makefile.executor": "Run",
+    "Makefile Target.test-all.executor": "Run",
+    "Makefile Target.test-basket.executor": "Run",
+    "Makefile Target.test-main-firefox.executor": "Run",
+    "Makefile Target.test-main.executor": "Run",
+    "Makefile Target.test.executor": "Run",
+    "Makefile Target.test_head.executor": "Run",
+    "Python tests.Python tests for test_login_link.test_error_user_authorization.executor": "Run",
+    "Python tests.Python tests for test_login_link.test_incorrect_entry_of_old_password.executor": "Run",
+    "Python tests.Python tests for test_login_link.test_open_account_customer_info.executor": "Run",
+    "Python tests.Python tests for test_login_link.test_open_login_link.executor": "Run",
+    "Python tests.Python tests for test_login_link.test_password_change_on_the_user_page.executor": "Run",
+    "Python tests.Python tests for test_login_link.test_user_authorization.executor": "Run",
+    "Python tests.Python tests for test_main.test_open_shopping_cart.executor": "Run",
+    "Python tests.Python tests for test_main.test_that_main_is_opened.executor": "Run",
+    "Python tests.Python tests for test_menu_electronics.test_add_negative_qty_values.executor": "Run",
+    "Python tests.Python tests for test_menu_electronics.test_add_negative_qty_values_smartphone.executor": "Run",
+    "Python tests.Python tests for test_menu_electronics.test_add_over_limit_qty_values.executor": "Run",
+    "Python tests.Python tests for test_menu_electronics.test_add_over_limit_qty_values_smartphone.executor": "Run",
+    "Python tests.Python tests for test_menu_electronics.test_add_phone_cover_to_cart.executor": "Run",
+    "Python tests.Python tests for test_menu_electronics.test_check_phone_cover_options.executor": "Run",
+    "Python tests.Python tests for test_open_header_menu.test_open_menu_books.executor": "Run",
+    "Python tests.Python tests for test_open_header_menu.test_open_menu_electronics.executor": "Run",
+    "Python tests.Python tests for test_register_link.test_email_in_lowercase.executor": "Run",
+    "Python tests.Python tests for test_register_link.test_email_in_uppercase.executor": "Run",
+    "Python tests.Python tests for test_register_link.test_email_with_hyphen.executor": "Run",
+    "Python tests.Python tests for test_register_link.test_email_with_hyphen_in_domain.executor": "Run",
+    "Python tests.Python tests for test_register_link.test_email_with_numbers.executor": "Run",
+    "Python tests.Python tests for test_register_link.test_email_with_numbers_in_domain.executor": "Run",
+    "Python tests.Python tests for test_register_link.test_email_with_spaces.executor": "Run",
+    "Python tests.Python tests for test_register_link.test_email_without_an_account.executor": "Run",
+    "Python tests.Python tests for test_register_link.test_email_without_domain.executor": "Run",
+    "Python tests.Python tests for test_register_link.test_empty_email_field.executor": "Run",
+    "Python tests.Python tests for test_register_link.test_new_user_input_data.executor": "Run",
+    "Python tests.Python tests for test_register_link.test_open_register_link.executor": "Run",
+    "Python tests.Python tests for test_register_link.test_open_shopping_cart.executor": "Run",
+    "Python tests.Python tests for test_register_link.test_random_new_user_input_data.executor": "Run",
+    "Python tests.Python tests for test_register_link.test_registration_with_dataset.executor": "Run",
+    "Python tests.Python tests for test_register_link.test_registration_without_entering_data.executor": "Run",
+    "Python tests.Python tests for test_shopping_cart_link.test_open_shopping_cart.executor": "Run",
+    "Python tests.Python tests for test_wishlist_link.test_add_item_from_wishlist_to_cart.executor": "Run",
+    "Python tests.Python tests for test_wishlist_link.test_open_wishlist_link.executor": "Run",
+    "Python tests.Python tests for test_wishlist_link.test_remove_item_from_wishlist.executor": "Run",
+    "Python tests.Python tests in test_login_link.py.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "editing__login__page",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "E:/Fotakartka/QAP18/образец/Alza_diplom-master",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.make"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\abeli\diplom\qap_18_zhuk_diplom\tests" />
@@ -98,8 +103,26 @@
       <recent name="C:\Users\abeli\diplom\qap_18_zhuk_diplom" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_register_link.test_email_with_spaces">
-    <configuration name="Python tests for test_register_link.test_email_with_hyphen" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Makefile Target.test_head">
+    <configuration name="test-all" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="test-all" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="test-basket" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="test-basket" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="test_head" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="test_head" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_login_link.test_incorrect_entry_of_old_password" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="qap_18_zhuk_diplom" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,11 +133,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_register_link.test_email_with_hyphen&quot;" />
+      <option name="_new_target" value="&quot;test_login_link.test_incorrect_entry_of_old_password&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_register_link.test_email_with_hyphen_in_domain" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_login_link.test_password_change_on_the_user_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="qap_18_zhuk_diplom" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,62 +148,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_register_link.test_email_with_hyphen_in_domain&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_register_link.test_email_with_spaces" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="qap_18_zhuk_diplom" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_register_link.test_email_with_spaces&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_register_link.test_email_without_an_account" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="qap_18_zhuk_diplom" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_register_link.test_email_without_an_account&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_register_link.test_email_without_domain" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="qap_18_zhuk_diplom" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_register_link.test_email_without_domain&quot;" />
+      <option name="_new_target" value="&quot;test_login_link.test_password_change_on_the_user_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_register_link.test_email_with_spaces" />
-        <item itemvalue="Python tests.Python tests for test_register_link.test_email_without_an_account" />
-        <item itemvalue="Python tests.Python tests for test_register_link.test_email_without_domain" />
-        <item itemvalue="Python tests.Python tests for test_register_link.test_email_with_hyphen_in_domain" />
-        <item itemvalue="Python tests.Python tests for test_register_link.test_email_with_hyphen" />
+        <item itemvalue="Makefile Target.test_head" />
+        <item itemvalue="Makefile Target.test-basket" />
+        <item itemvalue="Makefile Target.test-all" />
+        <item itemvalue="Python tests.Python tests for test_login_link.test_incorrect_entry_of_old_password" />
+        <item itemvalue="Python tests.Python tests for test_login_link.test_password_change_on_the_user_page" />
       </list>
     </recent_temporary>
   </component>
@@ -344,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727718611844</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="adit_readme_file">
+      <option name="closed" value="true" />
+      <created>1727796548680</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1727796548680</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
