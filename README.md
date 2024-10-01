@@ -16,19 +16,31 @@
 * pip (менеджер пакетов для Python, обычно устанавливается вместе с Python).
 
 # Установка проекта
-```git clone https://github.com/Sivych/qap_18_zhuk_diplom.git```
+```bash
+git clone https://github.com/Sivych/qap_18_zhuk_diplom.git
+```
 
-```cd diplom```
+```bash
+cd diplom
+```
 
-```pip install -r requirements.txt```
+```bash
+pip install -r requirements.txt
+```
 #### Линтер flake8:
-```pip install flake8```
+```bash
+pip install flake8
+```
 
 # Запуск тестов
 ### Run tests with pytest:
-``` pytest ```
+```bash
+pytest
+```
 ### Run all tests with make and allure:
-``` make test-all ```
+```bash
+make test-all
+```
 
 
 
