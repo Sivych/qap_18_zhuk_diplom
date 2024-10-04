@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d52008e-f26b-44ce-b4dc-cf3e839a0682" name="Changes" comment="adit_readme_file">
+    <list default="true" id="6d52008e-f26b-44ce-b4dc-cf3e839a0682" name="Changes" comment="add_new_tests_in_login_link">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators/login_link_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/login_link_locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login_link_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_link_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_login_link.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login_link.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,13 +25,14 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="editing_readmefile" />
+        <entry key="$PROJECT_DIR$" value="editing_login_page" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="Make.Settings">
-    <option name="path" value="C:\Users\abeli\diplom\qap_18_zhuk_diplom\Makefile" />
+    <option name="path" value="C:\Program Files (x86)\GnuWin32\bin\make.exe" />
+    <option name="useCygwin" value="true" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -44,8 +45,20 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Makefile Target.Makefile.executor": "Run",
+    "Makefile Target.clean-allure.executor": "Run",
+    "Makefile Target.clean.executor": "Run",
+    "Makefile Target.report-all.executor": "Run",
+    "Makefile Target.report-delivery.executor": "Run",
+    "Makefile Target.report-login.executor": "Run",
+    "Makefile Target.test-all-firefox.executor": "Run",
     "Makefile Target.test-all.executor": "Run",
     "Makefile Target.test-basket.executor": "Run",
+    "Makefile Target.test-contact.executor": "Run",
+    "Makefile Target.test-delivery.executor": "Run",
+    "Makefile Target.test-login-firefox.executor": "Run",
+    "Makefile Target.test-login.executor": "Run",
+    "Makefile Target.test-login_link-firefox.executor": "Run",
+    "Makefile Target.test-login_link.executor": "Run",
     "Makefile Target.test-main-firefox.executor": "Run",
     "Makefile Target.test-main.executor": "Run",
     "Makefile Target.test.executor": "Run",
@@ -88,9 +101,9 @@
     "Python tests.Python tests for test_wishlist_link.test_remove_item_from_wishlist.executor": "Run",
     "Python tests.Python tests in test_login_link.py.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "editing__login__page",
+    "git-widget-placeholder": "editing__makefile",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "E:/Fotakartka/QAP18/образец/Alza_diplom-master",
+    "last_opened_file_path": "C:/Users/abeli/qap_18_zhuk_diplom/tests/conftest.py",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.make"
   }
 }]]></component>
@@ -103,62 +116,44 @@
       <recent name="C:\Users\abeli\diplom\qap_18_zhuk_diplom" />
     </key>
   </component>
-  <component name="RunManager" selected="Makefile Target.test_head">
-    <configuration name="test-all" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="test-all" workingDirectory="" arguments="">
+  <component name="RunManager" selected="Makefile Target.clean">
+    <configuration name="clean" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="clean" workingDirectory="" arguments="">
         <envs />
       </makefile>
       <method v="2" />
     </configuration>
-    <configuration name="test-basket" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="test-basket" workingDirectory="" arguments="">
+    <configuration name="report-all" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="report-all" workingDirectory="" arguments="">
         <envs />
       </makefile>
       <method v="2" />
     </configuration>
-    <configuration name="test_head" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="test_head" workingDirectory="" arguments="">
+    <configuration name="test-all-firefox" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="test-all-firefox" workingDirectory="" arguments="">
         <envs />
       </makefile>
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_login_link.test_incorrect_entry_of_old_password" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="qap_18_zhuk_diplom" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_login_link.test_incorrect_entry_of_old_password&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    <configuration name="test-login_link-firefox" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="test-login_link-firefox" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_login_link.test_password_change_on_the_user_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="qap_18_zhuk_diplom" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_login_link.test_password_change_on_the_user_page&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    <configuration name="test-login_link" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="test-login_link" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Makefile Target.test_head" />
-        <item itemvalue="Makefile Target.test-basket" />
-        <item itemvalue="Makefile Target.test-all" />
-        <item itemvalue="Python tests.Python tests for test_login_link.test_incorrect_entry_of_old_password" />
-        <item itemvalue="Python tests.Python tests for test_login_link.test_password_change_on_the_user_page" />
+        <item itemvalue="Makefile Target.clean" />
+        <item itemvalue="Makefile Target.report-all" />
+        <item itemvalue="Makefile Target.test-login_link-firefox" />
+        <item itemvalue="Makefile Target.test-login_link" />
+        <item itemvalue="Makefile Target.test-all-firefox" />
       </list>
     </recent_temporary>
   </component>
@@ -330,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727796548680</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add_new_tests_in_login_link">
+      <option name="closed" value="true" />
+      <created>1727810268650</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1727810268650</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -360,6 +363,7 @@
     <MESSAGE value="editing_conftest.py" />
     <MESSAGE value="add_new_register_link_tests_email" />
     <MESSAGE value="adit_readme_file" />
-    <option name="LAST_COMMIT_MESSAGE" value="adit_readme_file" />
+    <MESSAGE value="add_new_tests_in_login_link" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_new_tests_in_login_link" />
   </component>
 </project>
