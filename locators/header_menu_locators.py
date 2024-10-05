@@ -10,3 +10,5 @@ class HeaderMenuLocators:
     MENU_JEWELRY = (By.XPATH, '//a[@href="/jewelry"]')
     MENU_GIFT_CARDS = (By.XPATH, '//a[@href="/gift-cards"]')
 
+    TEXT_SORT_BY = (By.CLASS_NAME, 'product-sorting')
+

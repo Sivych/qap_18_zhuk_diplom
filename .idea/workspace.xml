@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d52008e-f26b-44ce-b4dc-cf3e839a0682" name="Changes" comment="add_new_tests_in_login_link">
+    <list default="true" id="6d52008e-f26b-44ce-b4dc-cf3e839a0682" name="Changes" comment="add_makefile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/header_menu_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/header_menu_locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/main_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/main_locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/menu_books_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/menu_books_locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/menu_computers_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/menu_computers_locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/menu_electronics_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/menu_electronics_locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/register_link_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/register_link_locators.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="editing_login_page" />
+        <entry key="$PROJECT_DIR$" value="editing_makefile" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -101,7 +105,7 @@
     "Python tests.Python tests for test_wishlist_link.test_remove_item_from_wishlist.executor": "Run",
     "Python tests.Python tests in test_login_link.py.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "editing__makefile",
+    "git-widget-placeholder": "removal__locators",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/abeli/qap_18_zhuk_diplom/tests/conftest.py",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.make"
@@ -116,7 +120,7 @@
       <recent name="C:\Users\abeli\diplom\qap_18_zhuk_diplom" />
     </key>
   </component>
-  <component name="RunManager" selected="Makefile Target.clean">
+  <component name="RunManager" selected="Makefile Target.report-all">
     <configuration name="clean" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/Makefile" target="clean" workingDirectory="" arguments="">
         <envs />
@@ -149,8 +153,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Makefile Target.clean" />
         <item itemvalue="Makefile Target.report-all" />
+        <item itemvalue="Makefile Target.clean" />
         <item itemvalue="Makefile Target.test-login_link-firefox" />
         <item itemvalue="Makefile Target.test-login_link" />
         <item itemvalue="Makefile Target.test-all-firefox" />
@@ -333,7 +337,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727810268650</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add_makefile">
+      <option name="closed" value="true" />
+      <created>1728065618783</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1728065618783</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -364,6 +376,7 @@
     <MESSAGE value="add_new_register_link_tests_email" />
     <MESSAGE value="adit_readme_file" />
     <MESSAGE value="add_new_tests_in_login_link" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_new_tests_in_login_link" />
+    <MESSAGE value="add_makefile" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_makefile" />
   </component>
 </project>

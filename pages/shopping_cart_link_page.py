@@ -19,7 +19,6 @@ class ShoppingCartLinkPage(ShoppingCartLinkLocators, HeaderLinks, MainLocators, 
     def assert_shopping_cart_page_is_opened(self):
         self.assertions.assert_that_element_containce_text(self.TEXT_SHOPPING_CART, 'Shopping cart')
         assert self.get_element(self.FOOTER_MENU_WRAPPER)
-#        self.assertions.assert_that_element_containce_text(self.TEXT_BODY, 'Your Shopping Cart is empty!')
 
         self.save_screenshot('assert_shopping_cart_page_is_opened.png')
         allure.attach.file(
