@@ -21,13 +21,7 @@ class RegisterLinkPage(RegisterLinkLocators, HeaderLinks, MainLocators, BasePage
     def assert_register_page_is_opened(self):
         self.assertions.assert_that_element_containce_text(self.TEXT_PAGE_TITLE, 'Register')
         assert self.get_element(self.FOOTER_MENU_WRAPPER)
-
         self.save_screenshot('assert_register_page_is_opened.png')
-        allure.attach.file(
-            "assert_register_page_is_opened.png",
-            name="assert_register_page_is_opened",
-            attachment_type=allure.attachment_type.PNG
-        )
 
     @allure.step("Validation message")
     def validation_message(self):
@@ -39,11 +33,6 @@ class RegisterLinkPage(RegisterLinkLocators, HeaderLinks, MainLocators, BasePage
         self.assertions.assert_that_element_containce_text(self.CONFIRM_PASSWORD_VALIDATION_ERROR, 'Password is required.')
 
         self.save_screenshot('validation_message.png')
-        allure.attach.file(
-            "validation_message.png",
-            name="validation_message",
-            attachment_type=allure.attachment_type.PNG
-        )
 
     @allure.step("Random new user input data")
     def randon_new_user_input_data(self):
@@ -82,11 +71,6 @@ class RegisterLinkPage(RegisterLinkLocators, HeaderLinks, MainLocators, BasePage
         self.click_on_register_button()
         self.assertions.assert_that_element_containce_text(self.EMAIL_VALIDATION_ERROR, 'Email is required.')
         self.save_screenshot('validation_message_email.png')
-        allure.attach.file(
-            "validation_message_email.png",
-            name="validation_message_email",
-            attachment_type=allure.attachment_type.PNG
-        )
 
     @allure.step("Email in lowercase")
     def email_in_lowercase(self):

@@ -18,7 +18,6 @@ class MenuBooksPage(MenuBooksLocators, MainLocators, HeaderMenu, BasePage):
     @allure.step("Assert that menu books is opened")
     def assert_that_menu_books_is_opened(self):
         self.assertions.assert_that_element_containce_text(self.TEXT_PAGE_TITLE, 'Books')
-#        self.assertions.assert_that_element_containce_text(self.TEXT_SORT_BY, 'Sort by')
         assert self.get_element(self.FOOTER_MENU_WRAPPER)
 
     @allure.step("Add books to the shopping cart via the showcase")

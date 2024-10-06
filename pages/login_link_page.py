@@ -19,13 +19,7 @@ class LoginLinkPage(LoginLinkLocators, RegisterLinkLocators, HeaderLinks, MainLo
     def assert_login_page_is_opened(self):
         self.assertions.assert_that_element_containce_text(self.TEXT_PAGE_TITLE, 'Welcome, Please Sign In!')
         assert self.get_element(self.FOOTER_MENU_WRAPPER)
-
         self.save_screenshot('assert_login_page_is_opened.png')
-        allure.attach.file(
-            "assert_login_page_is_opened.png",
-            name="assert_login_page_is_opened",
-            attachment_type=allure.attachment_type.PNG
-        )
 
     @allure.step("User authorization")
     def user_authorization(self):
@@ -40,13 +34,7 @@ class LoginLinkPage(LoginLinkLocators, RegisterLinkLocators, HeaderLinks, MainLo
         assert self.get_element(self.HEADER_MENU)
         assert self.get_element(self.SLIDER)
         assert self.get_element(self.FOOTER_MENU_WRAPPER)
-
         self.save_screenshot('successful_login.png')
-        allure.attach.file(
-            "successful_login.png",
-            name="successful_login",
-            attachment_type=allure.attachment_type.PNG
-        )
 
     @allure.step("Error user authorization")
     def error_user_authorization(self):
@@ -58,13 +46,7 @@ class LoginLinkPage(LoginLinkLocators, RegisterLinkLocators, HeaderLinks, MainLo
         self.click_on_login_button()
         time.sleep(1)
         assert self.get_element(self.VALIDATION_SUMMARY_ERRORS)
-
         self.save_screenshot('error_user_authorization.png')
-        allure.attach.file(
-            "error_user_authorization.png",
-            name="error_user_authorization",
-            attachment_type=allure.attachment_type.PNG
-        )
 
     @allure.step("Assert account customer info")
     def assert_account_customer_info(self):
@@ -74,13 +56,7 @@ class LoginLinkPage(LoginLinkLocators, RegisterLinkLocators, HeaderLinks, MainLo
         self.assertions.assert_that_element_containce_text(self.YOUR_PERSONAL_DETAILS_TEXT, 'Your Personal Details')
         assert self.get_element(self.PERSONAL_DETAILS_FIRST_NAME)
         assert self.get_element(self.PERSONAL_DETAILS_LAST_NAME)
-
         self.save_screenshot('assert_account_customer_info.png')
-        allure.attach.file(
-            "assert_account_customer_info.png",
-            name="assert_account_customer_info",
-            attachment_type=allure.attachment_type.PNG
-        )
 
     @allure.step("Password change on the user page")
     def password_change_on_the_user_page(self):

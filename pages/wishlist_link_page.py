@@ -21,11 +21,6 @@ class WishlistLinkPage(WishlistLinkLocators, MenuApparelShoesLocators, HeaderLin
         assert self.get_element(self.FOOTER_MENU_WRAPPER)
 
         self.save_screenshot('assert_wishlist_page_is_opened.png')
-        allure.attach.file(
-            "assert_wishlist_page_is_opened.png" ,
-            name="assert_wishlist_page_is_opened" ,
-            attachment_type=allure.attachment_type.PNG
-        )
 
     @allure.step("Remove item from wishlist")
     def remove_item_from_wishlist(self):

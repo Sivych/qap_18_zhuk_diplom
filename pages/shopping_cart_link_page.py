@@ -21,11 +21,6 @@ class ShoppingCartLinkPage(ShoppingCartLinkLocators, HeaderLinks, MainLocators, 
         assert self.get_element(self.FOOTER_MENU_WRAPPER)
 
         self.save_screenshot('assert_shopping_cart_page_is_opened.png')
-        allure.attach.file(
-            "assert_shopping_cart_page_is_opened.png",
-            name="assert_shopping_cart_page_is_opened",
-            attachment_type=allure.attachment_type.PNG
-        )
 
     def checking_the_order_processing_without_authorization(self):
         """Проверка работы оформления заказа без авторизации"""

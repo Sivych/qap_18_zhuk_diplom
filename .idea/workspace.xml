@@ -6,13 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="6d52008e-f26b-44ce-b4dc-cf3e839a0682" name="Changes" comment="add_makefile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators/header_menu_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/header_menu_locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators/main_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/main_locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators/menu_books_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/menu_books_locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators/menu_computers_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/menu_computers_locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators/menu_electronics_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/menu_electronics_locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators/register_link_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/register_link_locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login_link_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_link_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/menu_books_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/menu_books_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/register_link_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register_link_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/shopping_cart_link_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/shopping_cart_link_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/wishlist_link_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/wishlist_link_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="editing_makefile" />
+        <entry key="$PROJECT_DIR$" value="editing_page" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,71 +46,71 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Makefile Target.Makefile.executor": "Run",
-    "Makefile Target.clean-allure.executor": "Run",
-    "Makefile Target.clean.executor": "Run",
-    "Makefile Target.report-all.executor": "Run",
-    "Makefile Target.report-delivery.executor": "Run",
-    "Makefile Target.report-login.executor": "Run",
-    "Makefile Target.test-all-firefox.executor": "Run",
-    "Makefile Target.test-all.executor": "Run",
-    "Makefile Target.test-basket.executor": "Run",
-    "Makefile Target.test-contact.executor": "Run",
-    "Makefile Target.test-delivery.executor": "Run",
-    "Makefile Target.test-login-firefox.executor": "Run",
-    "Makefile Target.test-login.executor": "Run",
-    "Makefile Target.test-login_link-firefox.executor": "Run",
-    "Makefile Target.test-login_link.executor": "Run",
-    "Makefile Target.test-main-firefox.executor": "Run",
-    "Makefile Target.test-main.executor": "Run",
-    "Makefile Target.test.executor": "Run",
-    "Makefile Target.test_head.executor": "Run",
-    "Python tests.Python tests for test_login_link.test_error_user_authorization.executor": "Run",
-    "Python tests.Python tests for test_login_link.test_incorrect_entry_of_old_password.executor": "Run",
-    "Python tests.Python tests for test_login_link.test_open_account_customer_info.executor": "Run",
-    "Python tests.Python tests for test_login_link.test_open_login_link.executor": "Run",
-    "Python tests.Python tests for test_login_link.test_password_change_on_the_user_page.executor": "Run",
-    "Python tests.Python tests for test_login_link.test_user_authorization.executor": "Run",
-    "Python tests.Python tests for test_main.test_open_shopping_cart.executor": "Run",
-    "Python tests.Python tests for test_main.test_that_main_is_opened.executor": "Run",
-    "Python tests.Python tests for test_menu_electronics.test_add_negative_qty_values.executor": "Run",
-    "Python tests.Python tests for test_menu_electronics.test_add_negative_qty_values_smartphone.executor": "Run",
-    "Python tests.Python tests for test_menu_electronics.test_add_over_limit_qty_values.executor": "Run",
-    "Python tests.Python tests for test_menu_electronics.test_add_over_limit_qty_values_smartphone.executor": "Run",
-    "Python tests.Python tests for test_menu_electronics.test_add_phone_cover_to_cart.executor": "Run",
-    "Python tests.Python tests for test_menu_electronics.test_check_phone_cover_options.executor": "Run",
-    "Python tests.Python tests for test_open_header_menu.test_open_menu_books.executor": "Run",
-    "Python tests.Python tests for test_open_header_menu.test_open_menu_electronics.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_email_in_lowercase.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_email_in_uppercase.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_email_with_hyphen.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_email_with_hyphen_in_domain.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_email_with_numbers.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_email_with_numbers_in_domain.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_email_with_spaces.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_email_without_an_account.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_email_without_domain.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_empty_email_field.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_new_user_input_data.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_open_register_link.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_open_shopping_cart.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_random_new_user_input_data.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_registration_with_dataset.executor": "Run",
-    "Python tests.Python tests for test_register_link.test_registration_without_entering_data.executor": "Run",
-    "Python tests.Python tests for test_shopping_cart_link.test_open_shopping_cart.executor": "Run",
-    "Python tests.Python tests for test_wishlist_link.test_add_item_from_wishlist_to_cart.executor": "Run",
-    "Python tests.Python tests for test_wishlist_link.test_open_wishlist_link.executor": "Run",
-    "Python tests.Python tests for test_wishlist_link.test_remove_item_from_wishlist.executor": "Run",
-    "Python tests.Python tests in test_login_link.py.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "removal__locators",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/abeli/qap_18_zhuk_diplom/tests/conftest.py",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.make"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Makefile Target.Makefile.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.clean-allure.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.clean.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.report-all.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.report-delivery.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.report-login.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test-all-firefox.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test-all.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test-basket.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test-contact.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test-delivery.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test-login-firefox.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test-login.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test-login_link-firefox.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test-login_link.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test-main-firefox.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test-main.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test_head.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login_link.test_error_user_authorization.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login_link.test_incorrect_entry_of_old_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login_link.test_open_account_customer_info.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login_link.test_open_login_link.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login_link.test_password_change_on_the_user_page.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login_link.test_user_authorization.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main.test_open_shopping_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main.test_that_main_is_opened.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_menu_electronics.test_add_negative_qty_values.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_menu_electronics.test_add_negative_qty_values_smartphone.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_menu_electronics.test_add_over_limit_qty_values.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_menu_electronics.test_add_over_limit_qty_values_smartphone.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_menu_electronics.test_add_phone_cover_to_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_menu_electronics.test_check_phone_cover_options.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_open_header_menu.test_open_menu_books.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_open_header_menu.test_open_menu_electronics.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_email_in_lowercase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_email_in_uppercase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_email_with_hyphen.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_email_with_hyphen_in_domain.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_email_with_numbers.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_email_with_numbers_in_domain.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_email_with_spaces.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_email_without_an_account.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_email_without_domain.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_empty_email_field.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_new_user_input_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_open_register_link.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_open_shopping_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_random_new_user_input_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_registration_with_dataset.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_register_link.test_registration_without_entering_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_shopping_cart_link.test_open_shopping_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_wishlist_link.test_add_item_from_wishlist_to_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_wishlist_link.test_open_wishlist_link.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_wishlist_link.test_remove_item_from_wishlist.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_login_link.py.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;removal__locators&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/abeli/qap_18_zhuk_diplom/tests/conftest.py&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.make&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\abeli\diplom\qap_18_zhuk_diplom\tests" />
@@ -120,19 +120,7 @@
       <recent name="C:\Users\abeli\diplom\qap_18_zhuk_diplom" />
     </key>
   </component>
-  <component name="RunManager" selected="Makefile Target.report-all">
-    <configuration name="clean" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="clean" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
-      <method v="2" />
-    </configuration>
-    <configuration name="report-all" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="report-all" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests for test_main.test_that_main_is_opened">
     <configuration name="test-all-firefox" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/Makefile" target="test-all-firefox" workingDirectory="" arguments="">
         <envs />
@@ -151,10 +139,40 @@
       </makefile>
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_main.test_that_main_is_opened" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="qap_18_zhuk_diplom" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_main.test_that_main_is_opened&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_register_link.test_open_register_link" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="qap_18_zhuk_diplom" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_register_link.test_open_register_link&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Makefile Target.report-all" />
-        <item itemvalue="Makefile Target.clean" />
+        <item itemvalue="Python tests.Python tests for test_main.test_that_main_is_opened" />
+        <item itemvalue="Python tests.Python tests for test_register_link.test_open_register_link" />
         <item itemvalue="Makefile Target.test-login_link-firefox" />
         <item itemvalue="Makefile Target.test-login_link" />
         <item itemvalue="Makefile Target.test-all-firefox" />
