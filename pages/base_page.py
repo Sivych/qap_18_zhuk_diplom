@@ -1,4 +1,5 @@
 from helpers.assertions import Assertions
+import allure
 
 
 class BasePage:
@@ -35,6 +36,11 @@ class BasePage:
 
     def save_screenshot(self, name):
         self.driver.save_screenshot(name)
+        allure.attach.file(
+            name,
+            name=name,
+            attachment_type=allure.attachment_type.PNG
+        )
 
     def get_text(self, selector):
         element = self.driver.find_element(*selector)
@@ -42,8 +48,3 @@ class BasePage:
 
     def go_to_element(self, value):
         self.driver.execute_script("arguments[0].scrollIntoView();", value)
-
-
-
-
-
