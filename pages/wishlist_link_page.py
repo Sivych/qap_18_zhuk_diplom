@@ -2,36 +2,30 @@ import time
 import allure
 
 from elements import HeaderLinks, HeaderMenu
-from helpers import BASE_URL
 from locators import MainLocators, WishlistLinkLocators, MenuApparelShoesLocators
 from pages import BasePage
 
 
 class WishlistLinkPage(WishlistLinkLocators, MenuApparelShoesLocators, HeaderLinks, HeaderMenu, MainLocators, BasePage):
-    def __init__(self , driver):
+    def __init__(self, driver):
         super().__init__(driver)
 
-    def open(self):
-        self.driver.get(BASE_URL)
-
-    @allure.step("Assert wishlist page is opened")
+    @allure.step("Checking the opening of the wishlist page")
     def assert_wishlist_page_is_opened(self):
         """Избранное открыто"""
         self.assertions.assert_that_element_containce_text(self.TEXT_PAGE_TITLE, 'Wishlist')
         assert self.get_element(self.FOOTER_MENU_WRAPPER)
+        self.save_screenshot('wishlist_page_is_opened.png')
 
-        self.save_screenshot('assert_wishlist_page_is_opened.png')
-
-    @allure.step("Remove item from wishlist")
+    @allure.step("Remove product in wishlist")
     def remove_item_from_wishlist(self):
-        """ Добавляем товар в избранное и проверяем удаляется ли он из неё"""
-        self.click(self.APPAREL_TOP_ITEM_PAGE)
-        self.click(self.APPAREL_TOP_ADD_TO_WISHLIST_BUTTON)
-        time.sleep(1)
-        self.click(self.WISHLIST_UPPER_MENU)
-        self.assertions.assert_that_element_containce_text(self.TEXT_PAGE_TITLE, 'Wishlist')
+        """Удаляем товар из избранного"""
         self.click(self.REMOVE_FROM_WISHLIST_CHECKBOX)
         self.click(self.UPDATE_WISHLIST)
+
+    @allure.step("Checking if a product has been removed from wishlist")
+    def checking_remove_item_from_wishlist(self):
+        """Проверяем удаляется ли товар из избранного"""
         self.assertions.assert_that_element_containce_text(self.EMPTY_WISH_LIST_TEXT, 'The wishlist is empty!')
 
     @allure.step("Add item from wishlist to cart")

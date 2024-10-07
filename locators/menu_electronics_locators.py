@@ -6,7 +6,7 @@ class MenuElectronicsLocators:
     CELL_PHONES_SECTION = (By.XPATH, '/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[1]/div[2]/div/h2/a')
 
     PHONES_SMARTPHONE = (By.XPATH, '//img[@alt="Picture of Smartphone"]')
-    PHONES_SMARTPHONE_CART_NAME = (By.CSS_SELECTOR, '[href="/phone-cover"]')
+    PHONES_SMARTPHONE_CART_NAME = (By.XPATH, '/html/body/div[4]/div[1]/div[4]/div/div/div[2]/div/form/table/tbody')
     PHONES_PHONE_COVER = (By.XPATH, '//img[@alt="Picture of Phone Cover"]')
 
     MANUFACTURER_DROPDOWN_MENU = (By.CSS_SELECTOR, 'select[id="product_attribute_80_2_37"]')

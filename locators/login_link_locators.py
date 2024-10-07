@@ -15,3 +15,4 @@ class LoginLinkLocators:
     CHANGE_PASSWORD_BUTTON = (By.CSS_SELECTOR, '.change-password-button')
     CHANGE_PASSWORD_MASSAGE = (By.XPATH, '/html/body/div[4]/div[1]/div[4]/div[2]/form/div/div[2]/div[2]')
     ERROR_CHANGE_PASSWORD_MASSAGE = (By.XPATH, '/html/body/div[4]/div[1]/div[4]/div[2]/form/div/div[2]/div[1]/div/ul/li')
+    ACCOUNT_LOGIN_WINDOW = (By.CSS_SELECTOR, '[class="returning-wrapper"]')
