@@ -8,5 +8,6 @@ class MainLocators:
     FOOTER_MENU_WRAPPER = (By.CLASS_NAME, 'footer-menu-wrapper')
     TEXT_PAGE_TITLE = (By.CLASS_NAME, 'page-title')
     CART_WARNING_TEXT = (By.CSS_SELECTOR, 'p[class="content"]')
-
+    TEXT_SORT_BY = (By.CLASS_NAME, 'product-sorting')
+    PAGE_BODY = (By.CSS_SELECTOR, '[class ="page-body"]')
 
